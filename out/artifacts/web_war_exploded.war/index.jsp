@@ -6,7 +6,7 @@
   </head>
   <body>
 <div>
-  <h1><a href="/random">Random</a></h1>
+  <h1><a href="${pageContext.request.contextPath}/random">Random</a></h1>
   <h1><a href="${pageContext.request.contextPath}/hello-servlet">Hello</a></h1>
 
 </div>
