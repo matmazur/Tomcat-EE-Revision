@@ -21,7 +21,7 @@ public class RandomNumberServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         resp.getWriter().println(random.nextInt(100)+1);
-        System.out.println("Console says - > random number was sent properly");
+        System.out.println("Console says -  > random number was sent properly");
 
     }
 }
