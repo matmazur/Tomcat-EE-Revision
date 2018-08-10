@@ -35,8 +35,30 @@ public class RandomNumberServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
+        resp.setContentType("text/html; charset=UTF-8");
+
         resp.getWriter().println(random.nextInt(100) + 1);
         System.out.println("Console says -  > random number was sent properly");
+
+
+
+        String param1 = req.getParameter("value1");
+        if (!param1.isEmpty()){
+            resp.getWriter().println(param1);
+            System.out.println(param1);
+
+        }
+
+        String [] param2 = req.getParameterValues("value2");
+        if (param2.length>0){
+            for (String s :param2){
+                resp.getWriter().println(s);
+
+                System.out.println(s);
+            }
+        }
+
+
 
     }
 }

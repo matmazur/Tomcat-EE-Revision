@@ -8,7 +8,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a2dad716-1116-4494-a2cc-73c10190ada5" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded.war/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded.war/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/servlets/RandomNumberServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlets/RandomNumberServlet.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -51,8 +50,8 @@
       <file leaf-file-name="RandomNumberServlet.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/servlets/RandomNumberServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="515">
-              <caret line="32" column="31" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
+            <state relative-caret-position="476">
+              <caret line="47" column="37" selection-start-line="47" selection-start-column="37" selection-end-line="47" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -439,12 +438,12 @@
       <option name="presentableId" value="Default" />
       <updated>1533817093757</updated>
       <workItem from="1533817096930" duration="2883000" />
-      <workItem from="1533889437358" duration="7696000" />
+      <workItem from="1533889437358" duration="11346000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10579000" />
+    <option name="totallyTimeSpent" value="14229000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -470,7 +469,7 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39888683" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39888683" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32931355" />
       <window_info anchor="bottom" id="Messages" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
@@ -479,9 +478,9 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32931355" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.26159555" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49845678" visible="true" weight="0.25266525" />
-      <window_info id="Web" order="2" sideWeight="0.5015432" side_tool="true" visible="true" weight="0.25266525" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.26159555" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4987437" visible="true" weight="0.25266525" />
+      <window_info id="Web" order="2" sideWeight="0.5012563" side_tool="true" visible="true" weight="0.25266525" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -575,8 +574,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/servlets/RandomNumberServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="515">
-          <caret line="32" column="31" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
+        <state relative-caret-position="476">
+          <caret line="47" column="37" selection-start-line="47" selection-start-column="37" selection-end-line="47" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
