@@ -18,7 +18,7 @@ public class HelloServlet extends HttpServlet {
         resp.getWriter().println("GREETINGS MASSIVE");
         resp.getWriter().println("Tomcat works rather proper way");
         resp.getWriter().println("Test do I have to even reload anything");
-        resp.getWriter().println("Test2: I don't even have to rebuild a thing. Not so shabby at all.");
+        resp.getWriter().println("Test2: I don't even have to rebuild a thing. Not so shabby at all. Test 3?");
 
 
 
