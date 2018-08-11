@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.Random;
 import java.util.logging.Logger;
 
@@ -17,7 +18,6 @@ public class RandomNumberServlet extends HttpServlet {
 
     private static Logger logger = Logger.getLogger(RandomNumberServlet.class.getName());
     private Random random;
-
 
 
     public RandomNumberServlet() {
@@ -39,15 +39,20 @@ public class RandomNumberServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-//        resp.setContentType("text/html");
-//        resp.setCharacterEncoding("UTF-8");
-
-        resp.getWriter().println(random.nextInt(100) + 1);
-        System.out.println("Console says -  > random number was sent properly");
+        PrintWriter writer = resp.getWriter();
 
         HttpSession session = req.getSession(true);
 
+
+        resp.getWriter().println("<!doctype html>");
+        resp.getWriter().println("<head>");
+        resp.getWriter().println("</head>");
+        resp.getWriter().println("<body>");
         session.setMaxInactiveInterval(60);
+
+       resp.getWriter().println(random.nextInt(100) + 1);
+
+        newLine(resp);
 
         if (session.getAttribute("string") != null) {
             resp.getWriter().println(session.getAttribute("string"));
@@ -56,6 +61,7 @@ public class RandomNumberServlet extends HttpServlet {
 
         User user = new User();
         user.setFirstName(req.getParameter("name"));
+
         user.setLastName(req.getParameter("lastName"));
 
         if (user.getLastName() != null && user.getFirstName() != null) {
@@ -68,10 +74,26 @@ public class RandomNumberServlet extends HttpServlet {
         }
 
 
+        if (session.getAttribute("email") != null && session.getAttribute("password") != null) {
+
+            newLine(resp);
+            writer.println("Your emails is  - " + session.getAttribute("email"));
+            newLine(resp);
+            writer.println("Your password is (wink wink)  - " + session.getAttribute("password"));
+
+        }
+        resp.getWriter().println("<a href=\"form.html\"> link to form</a>");
+        resp.getWriter().println("</body>");
+
+        resp.getWriter().println("</html>");
+
 
     }
 
 
-
+    private void newLine(HttpServletResponse resp) throws IOException {
+        PrintWriter writer = resp.getWriter();
+        writer.println("<br>");
+    }
 }
 
