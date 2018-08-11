@@ -1,5 +1,7 @@
 package servlets;
 
+import beans.User;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -15,6 +17,7 @@ public class RandomNumberServlet extends HttpServlet {
 
     private static Logger logger = Logger.getLogger(RandomNumberServlet.class.getName());
     private Random random;
+
 
 
     public RandomNumberServlet() {
@@ -36,39 +39,39 @@ public class RandomNumberServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        resp.setContentType("text/html; charset=UTF-8");
+//        resp.setContentType("text/html");
+//        resp.setCharacterEncoding("UTF-8");
 
         resp.getWriter().println(random.nextInt(100) + 1);
         System.out.println("Console says -  > random number was sent properly");
 
-        logger.warning("Creating session");
-
         HttpSession session = req.getSession(true);
-        logger.warning("session created");
 
-        if (session.getAttribute("string")!=null)
-        resp.getWriter().println(session.getAttribute("string"));
+        session.setMaxInactiveInterval(60);
 
-
-
-        String param1 = req.getParameter("value1");
-        if (!param1.isEmpty()){
-            resp.getWriter().println(param1);
-            System.out.println(param1);
-
+        if (session.getAttribute("string") != null) {
+            resp.getWriter().println(session.getAttribute("string"));
         }
 
-        String [] param2 = req.getParameterValues("value2");
-        if (param2.length>0){
-            for (String s :param2){
-                resp.getWriter().println(s);
 
-                System.out.println(s);
+        User user = new User();
+        user.setFirstName(req.getParameter("name"));
+        user.setLastName(req.getParameter("lastName"));
+
+        if (user.getLastName() != null && user.getFirstName() != null) {
+            resp.getWriter().println("Hello " + user.getFirstName() + " " + user.getLastName() + "!");
+        } else {
+            if (session.getAttribute("user-ron") != null) {
+                User ron = (User) session.getAttribute("user-ron");
+                resp.getWriter().println("Hello " + ron.getFirstName() + " " + ron.getLastName() + "!");
             }
         }
 
 
 
-
     }
+
+
+
 }
+

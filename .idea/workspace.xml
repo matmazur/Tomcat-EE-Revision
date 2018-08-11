@@ -7,8 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a2dad716-1116-4494-a2cc-73c10190ada5" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/servlets/SessionViewServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/beans/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded.war/WEB-INF/classes/servlets/HelloServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded.war/WEB-INF/classes/servlets/HelloServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tomcat/servlets/HelloServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tomcat/servlets/HelloServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/servlets/HelloServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlets/HelloServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/servlets/RandomNumberServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlets/RandomNumberServlet.java" afterDir="false" />
     </list>
@@ -55,10 +57,29 @@
       <file leaf-file-name="RandomNumberServlet.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/servlets/RandomNumberServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+            <state relative-caret-position="459">
+              <caret line="49" column="41" selection-start-line="49" selection-start-column="41" selection-end-line="49" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/beans/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="52" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
+              <folding>
+                <element signature="e#151#152#0" expanded="true" />
+                <element signature="e#183#184#0" expanded="true" />
+                <element signature="e#232#233#0" expanded="true" />
+                <element signature="e#274#275#0" expanded="true" />
+                <element signature="e#308#309#0" expanded="true" />
+                <element signature="e#339#340#0" expanded="true" />
+                <element signature="e#386#387#0" expanded="true" />
+                <element signature="e#426#427#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -111,6 +132,7 @@
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/src/servlets/SessionViewServlet.java" />
+        <option value="$PROJECT_DIR$/src/beans/User.java" />
         <option value="$PROJECT_DIR$/src/servlets/HelloServlet.java" />
         <option value="$PROJECT_DIR$/src/servlets/RandomNumberServlet.java" />
       </list>
@@ -192,6 +214,12 @@
               <item name="RevisionAndTomcat" type="b2602c69:ProjectViewProjectNode" />
               <item name="RevisionAndTomcat" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RevisionAndTomcat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RevisionAndTomcat" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="beans" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="RevisionAndTomcat" type="b2602c69:ProjectViewProjectNode" />
@@ -449,12 +477,12 @@
       <updated>1533817093757</updated>
       <workItem from="1533817096930" duration="2883000" />
       <workItem from="1533889437358" duration="12647000" />
-      <workItem from="1533989321714" duration="1735000" />
+      <workItem from="1533989321714" duration="3988000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17265000" />
+    <option name="totallyTimeSpent" value="19518000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -480,9 +508,9 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39888683" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.39888683" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32931355" />
-      <window_info anchor="bottom" id="Messages" order="7" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32931355" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
@@ -635,10 +663,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/beans/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="52" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
+          <folding>
+            <element signature="e#151#152#0" expanded="true" />
+            <element signature="e#183#184#0" expanded="true" />
+            <element signature="e#232#233#0" expanded="true" />
+            <element signature="e#274#275#0" expanded="true" />
+            <element signature="e#308#309#0" expanded="true" />
+            <element signature="e#339#340#0" expanded="true" />
+            <element signature="e#386#387#0" expanded="true" />
+            <element signature="e#426#427#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/servlets/RandomNumberServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+        <state relative-caret-position="459">
+          <caret line="49" column="41" selection-start-line="49" selection-start-column="41" selection-end-line="49" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
