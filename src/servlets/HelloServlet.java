@@ -18,7 +18,9 @@ public class HelloServlet extends HttpServlet {
         resp.getWriter().println("Test do I have to even reload anything");
         resp.getWriter().println("Test2: I don't even have to rebuild a thing. Not so shabby at all. Test 3?");
 
+        req.getSession(true);
 
+        req.getSession().setAttribute("string", new String("Jesus christ!"));
 
 
     }

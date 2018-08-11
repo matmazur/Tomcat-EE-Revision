@@ -5,6 +5,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.Random;
 import java.util.logging.Logger;
@@ -40,6 +41,14 @@ public class RandomNumberServlet extends HttpServlet {
         resp.getWriter().println(random.nextInt(100) + 1);
         System.out.println("Console says -  > random number was sent properly");
 
+        logger.warning("Creating session");
+
+        HttpSession session = req.getSession(true);
+        logger.warning("session created");
+
+        if (session.getAttribute("string")!=null)
+        resp.getWriter().println(session.getAttribute("string"));
+
 
 
         String param1 = req.getParameter("value1");
@@ -57,6 +66,7 @@ public class RandomNumberServlet extends HttpServlet {
                 System.out.println(s);
             }
         }
+
 
 
 
