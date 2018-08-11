@@ -40,40 +40,55 @@ public class RandomNumberServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         PrintWriter writer = resp.getWriter();
-
         HttpSession session = req.getSession(true);
-
-
-        resp.getWriter().println("<!doctype html>");
-        resp.getWriter().println("<head>");
-        resp.getWriter().println("</head>");
-        resp.getWriter().println("<body>");
         session.setMaxInactiveInterval(60);
 
-        resp.getWriter().println(random.nextInt(100) + 1);
+
+        writer.println("<!doctype html>");
+        writer.println("<head>");
+        writer.println("</head>");
+        writer.println("<body>");
+
+        writer.println(random.nextInt(100) + 1);
 
         newLine(resp);
 
         if (session.getAttribute("string") != null) {
-            resp.getWriter().println(session.getAttribute("string"));
+            writer.println(session.getAttribute("string"));
         }
 
+        User user = setUserFromSession(req);
 
-        User user = new User();
-        user.setFirstName(req.getParameter("name"));
+        printUserFromRequestIfPossible(writer, session, user);
 
-        user.setLastName(req.getParameter("lastName"));
+        printUserFromFormIfExists(resp, writer, session);
 
+        writer.println("<a href=\"form.html\"> link to form</a>");
+        writer.println("</body>");
+        writer.println("</html>");
+
+
+    }
+
+    private void printUserFromRequestIfPossible(PrintWriter writer, HttpSession session, User user) {
         if (user.getLastName() != null && user.getFirstName() != null) {
-            resp.getWriter().println("Hello " + user.getFirstName() + " " + user.getLastName() + "!");
+            writer.println("Hello " + user.getFirstName() + " " + user.getLastName() + "!");
         } else {
             if (session.getAttribute("user-ron") != null) {
                 User ron = (User) session.getAttribute("user-ron");
-                resp.getWriter().println("Hello " + ron.getFirstName() + " " + ron.getLastName() + "!");
+                writer.println("Hello " + ron.getFirstName() + " " + ron.getLastName() + "!");
             }
         }
+    }
 
+    private User setUserFromSession(HttpServletRequest req) {
+        User user = new User();
+        user.setFirstName(req.getParameter("name"));
+        user.setLastName(req.getParameter("lastName"));
+        return user;
+    }
 
+    private void printUserFromFormIfExists(HttpServletResponse resp, PrintWriter writer, HttpSession session) throws IOException {
         if (session.getAttribute("email") != null &&
                 session.getAttribute("password") != null &&
                 session.getAttribute("firstname") != null &&
@@ -81,21 +96,13 @@ public class RandomNumberServlet extends HttpServlet {
 
 
             newLine(resp);
-
             writer.println("Hello sir " + session.getAttribute("firstname") + " " + session.getAttribute("lastname"));
-
             newLine(resp);
             writer.println("Your emails is  - " + session.getAttribute("email"));
             newLine(resp);
             writer.println("Your password is (wink wink)  - " + session.getAttribute("password"));
 
         }
-        resp.getWriter().println("<a href=\"form.html\"> link to form</a>");
-        resp.getWriter().println("</body>");
-
-        resp.getWriter().println("</html>");
-
-
     }
 
 
