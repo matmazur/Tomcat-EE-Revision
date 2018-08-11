@@ -7,10 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a2dad716-1116-4494-a2cc-73c10190ada5" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/web/form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/beans/AdvancedUser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/servlets/RandomNumberServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlets/RandomNumberServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/servlets/SessionViewServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlets/SomePostServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/servlets/SomePostServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlets/SomePostServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/form.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -49,8 +50,8 @@
       <file leaf-file-name="RandomNumberServlet.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/servlets/RandomNumberServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="52" column="57" selection-start-line="52" selection-start-column="57" selection-end-line="52" selection-end-column="57" />
+            <state relative-caret-position="165">
+              <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -61,8 +62,8 @@
       <file leaf-file-name="form.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/form.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="187">
+              <caret line="11" column="84" selection-start-line="11" selection-start-column="84" selection-end-line="11" selection-end-column="84" />
             </state>
           </provider>
         </entry>
@@ -70,8 +71,8 @@
       <file leaf-file-name="SomePostServlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/servlets/SomePostServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+            <state relative-caret-position="306">
+              <caret line="26" column="39" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -79,8 +80,8 @@
       <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/beans/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="52" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
+            <state relative-caret-position="510">
+              <caret line="30" column="50" lean-forward="true" selection-end-line="36" selection-end-column="1" />
               <folding>
                 <element signature="e#151#152#0" expanded="true" />
                 <element signature="e#183#184#0" expanded="true" />
@@ -90,6 +91,33 @@
                 <element signature="e#339#340#0" expanded="true" />
                 <element signature="e#386#387#0" expanded="true" />
                 <element signature="e#426#427#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdvancedUser.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/beans/AdvancedUser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+              <folding>
+                <element signature="e#424#425#0" expanded="true" />
+                <element signature="e#456#457#0" expanded="true" />
+                <element signature="e#506#507#0" expanded="true" />
+                <element signature="e#548#549#0" expanded="true" />
+                <element signature="e#583#584#0" expanded="true" />
+                <element signature="e#614#615#0" expanded="true" />
+                <element signature="e#662#663#0" expanded="true" />
+                <element signature="e#702#703#0" expanded="true" />
+                <element signature="e#734#735#0" expanded="true" />
+                <element signature="e#762#763#0" expanded="true" />
+                <element signature="e#804#805#0" expanded="true" />
+                <element signature="e#838#839#0" expanded="true" />
+                <element signature="e#873#874#0" expanded="true" />
+                <element signature="e#904#905#0" expanded="true" />
+                <element signature="e#952#953#0" expanded="true" />
+                <element signature="e#992#993#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -118,8 +146,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -141,6 +169,7 @@
         <option value="$PROJECT_DIR$/src/servlets/SessionViewServlet.java" />
         <option value="$PROJECT_DIR$/src/beans/User.java" />
         <option value="$PROJECT_DIR$/src/servlets/HelloServlet.java" />
+        <option value="$PROJECT_DIR$/src/beans/AdvancedUser.java" />
         <option value="$PROJECT_DIR$/src/servlets/SomePostServlet.java" />
         <option value="$PROJECT_DIR$/web/form.html" />
         <option value="$PROJECT_DIR$/src/servlets/RandomNumberServlet.java" />
@@ -531,12 +560,12 @@
       <updated>1533817093757</updated>
       <workItem from="1533817096930" duration="2883000" />
       <workItem from="1533889437358" duration="12647000" />
-      <workItem from="1533989321714" duration="7630000" />
+      <workItem from="1533989321714" duration="8698000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23160000" />
+    <option name="totallyTimeSpent" value="24228000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -571,10 +600,10 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32931355" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32931355" />
-      <window_info anchor="right" id="Coverage" side_tool="true" visible="true" weight="0.32995737" />
+      <window_info anchor="right" id="Coverage" side_tool="true" visible="true" weight="0.17697228" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.26159555" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.79012346" visible="true" weight="0.18923241" />
-      <window_info id="Web" order="2" sideWeight="0.20987654" side_tool="true" visible="true" weight="0.18923241" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.79012346" visible="true" weight="0.24360341" />
+      <window_info id="Web" order="2" sideWeight="0.20987654" side_tool="true" visible="true" weight="0.24360341" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -692,23 +721,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/beans/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="52" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
-          <folding>
-            <element signature="e#151#152#0" expanded="true" />
-            <element signature="e#183#184#0" expanded="true" />
-            <element signature="e#232#233#0" expanded="true" />
-            <element signature="e#274#275#0" expanded="true" />
-            <element signature="e#308#309#0" expanded="true" />
-            <element signature="e#339#340#0" expanded="true" />
-            <element signature="e#386#387#0" expanded="true" />
-            <element signature="e#426#427#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/servlets/HelloServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -733,24 +745,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlets/SomePostServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/beans/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        <state relative-caret-position="510">
+          <caret line="30" column="50" lean-forward="true" selection-end-line="36" selection-end-column="1" />
+          <folding>
+            <element signature="e#151#152#0" expanded="true" />
+            <element signature="e#183#184#0" expanded="true" />
+            <element signature="e#232#233#0" expanded="true" />
+            <element signature="e#274#275#0" expanded="true" />
+            <element signature="e#308#309#0" expanded="true" />
+            <element signature="e#339#340#0" expanded="true" />
+            <element signature="e#386#387#0" expanded="true" />
+            <element signature="e#426#427#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/beans/AdvancedUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+          <folding>
+            <element signature="e#424#425#0" expanded="true" />
+            <element signature="e#456#457#0" expanded="true" />
+            <element signature="e#506#507#0" expanded="true" />
+            <element signature="e#548#549#0" expanded="true" />
+            <element signature="e#583#584#0" expanded="true" />
+            <element signature="e#614#615#0" expanded="true" />
+            <element signature="e#662#663#0" expanded="true" />
+            <element signature="e#702#703#0" expanded="true" />
+            <element signature="e#734#735#0" expanded="true" />
+            <element signature="e#762#763#0" expanded="true" />
+            <element signature="e#804#805#0" expanded="true" />
+            <element signature="e#838#839#0" expanded="true" />
+            <element signature="e#873#874#0" expanded="true" />
+            <element signature="e#904#905#0" expanded="true" />
+            <element signature="e#952#953#0" expanded="true" />
+            <element signature="e#992#993#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/form.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="187">
+          <caret line="11" column="84" selection-start-line="11" selection-start-column="84" selection-end-line="11" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlets/SomePostServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="26" column="39" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/servlets/RandomNumberServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="52" column="57" selection-start-line="52" selection-start-column="57" selection-end-line="52" selection-end-column="57" />
+        <state relative-caret-position="165">
+          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -50,7 +50,7 @@ public class RandomNumberServlet extends HttpServlet {
         resp.getWriter().println("<body>");
         session.setMaxInactiveInterval(60);
 
-       resp.getWriter().println(random.nextInt(100) + 1);
+        resp.getWriter().println(random.nextInt(100) + 1);
 
         newLine(resp);
 
@@ -74,7 +74,15 @@ public class RandomNumberServlet extends HttpServlet {
         }
 
 
-        if (session.getAttribute("email") != null && session.getAttribute("password") != null) {
+        if (session.getAttribute("email") != null &&
+                session.getAttribute("password") != null &&
+                session.getAttribute("firstname") != null &&
+                session.getAttribute("lastname") != null) {
+
+
+            newLine(resp);
+
+            writer.println("Hello sir " + session.getAttribute("firstname") + " " + session.getAttribute("lastname"));
 
             newLine(resp);
             writer.println("Your emails is  - " + session.getAttribute("email"));

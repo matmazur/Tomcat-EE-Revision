@@ -18,10 +18,14 @@ public class SomePostServlet extends HttpServlet {
 
         String email = request.getParameter("email");
         String password = request.getParameter("password");
-
+        String firstname = request.getParameter("firstname");
+        String lastname = request.getParameter("lastname");
 
         HttpSession session = request.getSession(true);
 
+
+        session.setAttribute("firstname", firstname);
+        session.setAttribute("lastname", lastname);
         session.setAttribute("email", email);
         session.setAttribute("password", password);
 
