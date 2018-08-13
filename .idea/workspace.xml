@@ -7,8 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a2dad716-1116-4494-a2cc-73c10190ada5" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/web/test.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded.war/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded.war/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/beans/AdvancedUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/beans/AdvancedUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/servlets/HelloServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlets/HelloServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/servlets/RandomNumberServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlets/AddUserServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/servlets/SomePostServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlets/SomePostServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -33,20 +37,80 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/test.jsp">
+      <file leaf-file-name="HelloServlet.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/servlets/HelloServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="64" selection-start-line="7" selection-start-column="64" selection-end-line="7" selection-end-column="64" />
+            <state relative-caret-position="157">
+              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+            <state relative-caret-position="323">
+              <caret line="19" column="31" lean-forward="true" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/servlets/LoginServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AddUserServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/servlets/AddUserServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="19" column="18" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="18" />
+              <folding>
+                <element signature="method#RandomNumberServlet#0;class#RandomNumberServlet#0" />
+                <element signature="method#init#0;class#RandomNumberServlet#0" />
+                <element signature="method#destroy#0;class#RandomNumberServlet#0" />
+                <element signature="method#newLine#0;class#RandomNumberServlet#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="form.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/form.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="84" selection-start-line="11" selection-start-column="84" selection-end-line="11" selection-end-column="84" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SomePostServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/servlets/SomePostServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="410">
+              <caret line="48" column="50" selection-start-line="48" selection-start-column="50" selection-end-line="48" selection-end-column="50" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -66,6 +130,7 @@
     <findStrings>
       <find>&lt;br&gt;</find>
       <find>resp.getWriter()</find>
+      <find>random</find>
     </findStrings>
     <replaceStrings>
       <replace>writer</replace>
@@ -81,16 +146,17 @@
         <option value="$PROJECT_DIR$/src/servlets/Servlet.java" />
         <option value="$PROJECT_DIR$/src/servlets/SessionViewServlet.java" />
         <option value="$PROJECT_DIR$/src/beans/User.java" />
-        <option value="$PROJECT_DIR$/src/servlets/HelloServlet.java" />
-        <option value="$PROJECT_DIR$/src/beans/AdvancedUser.java" />
-        <option value="$PROJECT_DIR$/src/servlets/SomePostServlet.java" />
         <option value="$PROJECT_DIR$/web/form.html" />
-        <option value="$PROJECT_DIR$/src/servlets/RandomNumberServlet.java" />
         <option value="$PROJECT_DIR$/src/servlets/LoginServlet.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/web/login.html" />
         <option value="$PROJECT_DIR$/web/test.jsp" />
+        <option value="$PROJECT_DIR$/src/beans/AdvancedUser.java" />
+        <option value="$PROJECT_DIR$/src/servlets/SomePostServlet.java" />
+        <option value="$PROJECT_DIR$/src/servlets/RandomNumberServlet.java" />
+        <option value="$PROJECT_DIR$/src/servlets/AddUserServlet.java" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
+        <option value="$PROJECT_DIR$/src/servlets/HelloServlet.java" />
       </list>
     </option>
   </component>
@@ -147,7 +213,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="430" />
     <option name="y" value="129" />
     <option name="width" value="1400" />
@@ -481,12 +547,12 @@
       <workItem from="1533989321714" duration="12485000" />
       <workItem from="1534148515576" duration="179000" />
       <workItem from="1534149110698" duration="70000" />
-      <workItem from="1534149255556" duration="781000" />
+      <workItem from="1534149255556" duration="5806000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29045000" />
+    <option name="totallyTimeSpent" value="34070000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -498,8 +564,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="430" y="129" width="1400" height="1000" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1216" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -512,7 +577,7 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39095128" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.5185529" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32931355" />
       <window_info anchor="bottom" id="Messages" order="7" weight="0.32931355" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
@@ -521,9 +586,9 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32931355" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32931355" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.25986078" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7847619" visible="true" weight="0.25447762" />
-      <window_info id="Web" order="2" sideWeight="0.2152381" side_tool="true" visible="true" weight="0.25447762" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.25974026" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7842004" visible="true" weight="0.18176973" />
+      <window_info id="Web" order="2" sideWeight="0.21579961" side_tool="true" visible="true" weight="0.18176973" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -543,15 +608,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/servlets/RandomNumberServlet.java</url>
-          <line>41</line>
-          <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -559,16 +616,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/servlets/LoginServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/form.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -656,7 +703,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlets/RandomNumberServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/servlets/AddUserServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="42" column="51" selection-start-line="42" selection-start-column="51" selection-end-line="42" selection-end-column="51" />
@@ -664,9 +711,6 @@
             <element signature="method#RandomNumberServlet#0;class#RandomNumberServlet#0" />
             <element signature="method#init#0;class#RandomNumberServlet#0" />
             <element signature="method#destroy#0;class#RandomNumberServlet#0" />
-            <element signature="method#printUserFromRequestIfPossible#0;class#RandomNumberServlet#0" />
-            <element signature="method#setUserFromSession#0;class#RandomNumberServlet#0" />
-            <element signature="method#printUserFromFormIfExists#0;class#RandomNumberServlet#0" />
             <element signature="method#newLine#0;class#RandomNumberServlet#0" />
           </folding>
         </state>
@@ -769,7 +813,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlets/RandomNumberServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/servlets/AddUserServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="42" column="51" lean-forward="true" selection-start-line="42" selection-start-column="51" selection-end-line="42" selection-end-column="51" />
@@ -777,9 +821,6 @@
             <element signature="method#RandomNumberServlet#0;class#RandomNumberServlet#0" />
             <element signature="method#init#0;class#RandomNumberServlet#0" />
             <element signature="method#destroy#0;class#RandomNumberServlet#0" />
-            <element signature="method#printUserFromRequestIfPossible#0;class#RandomNumberServlet#0" />
-            <element signature="method#setUserFromSession#0;class#RandomNumberServlet#0" />
-            <element signature="method#printUserFromFormIfExists#0;class#RandomNumberServlet#0" />
             <element signature="method#newLine#0;class#RandomNumberServlet#0" />
           </folding>
         </state>
@@ -903,7 +944,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlets/RandomNumberServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/servlets/AddUserServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
           <caret line="47" column="37" selection-start-line="47" selection-start-column="37" selection-end-line="47" selection-end-column="37" />
@@ -911,9 +952,6 @@
             <element signature="method#RandomNumberServlet#0;class#RandomNumberServlet#0" />
             <element signature="method#init#0;class#RandomNumberServlet#0" />
             <element signature="method#destroy#0;class#RandomNumberServlet#0" />
-            <element signature="method#printUserFromRequestIfPossible#0;class#RandomNumberServlet#0" />
-            <element signature="method#setUserFromSession#0;class#RandomNumberServlet#0" />
-            <element signature="method#printUserFromFormIfExists#0;class#RandomNumberServlet#0" />
             <element signature="method#newLine#0;class#RandomNumberServlet#0" />
           </folding>
         </state>
@@ -955,16 +993,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/servlets/Servlet.java" />
-    <entry file="file://$PROJECT_DIR$/src/servlets/HelloServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="17" selection-start-column="17" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -989,10 +1017,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/test.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="64" selection-start-line="7" selection-start-column="64" selection-end-line="7" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/beans/AdvancedUser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+        <state relative-caret-position="829">
+          <caret line="49" column="18" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
           <folding>
             <element signature="e#424#425#0" expanded="true" />
             <element signature="e#456#457#0" expanded="true" />
@@ -1014,27 +1049,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/form.html">
+    <entry file="jar://C:/wildfly-13.0.0.Final/modules/system/layers/base/javax/servlet/api/main/jboss-servlet-api_3.1_spec-1.0.2.Final.jar!/javax/servlet/http/HttpSession.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="84" selection-start-line="11" selection-start-column="84" selection-end-line="11" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlets/SomePostServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="26" column="39" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlets/LoginServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="331">
+          <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -1045,19 +1063,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlets/RandomNumberServlet.java">
+    <entry file="file://$PROJECT_DIR$/web/form.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="42" column="51" selection-start-line="42" selection-start-column="51" selection-end-line="42" selection-end-column="51" />
+        <state relative-caret-position="187">
+          <caret line="11" column="84" selection-start-line="11" selection-start-column="84" selection-end-line="11" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlets/AddUserServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="19" column="18" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="18" />
           <folding>
             <element signature="method#RandomNumberServlet#0;class#RandomNumberServlet#0" />
             <element signature="method#init#0;class#RandomNumberServlet#0" />
             <element signature="method#destroy#0;class#RandomNumberServlet#0" />
-            <element signature="method#printUserFromRequestIfPossible#0;class#RandomNumberServlet#0" />
-            <element signature="method#setUserFromSession#0;class#RandomNumberServlet#0" />
-            <element signature="method#printUserFromFormIfExists#0;class#RandomNumberServlet#0" />
             <element signature="method#newLine#0;class#RandomNumberServlet#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlets/LoginServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlets/SomePostServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="48" column="50" selection-start-line="48" selection-start-column="50" selection-end-line="48" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="31" lean-forward="true" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -1068,17 +1117,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/test.jsp">
+    <entry file="file://$PROJECT_DIR$/src/servlets/HelloServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="64" selection-start-line="7" selection-start-column="64" selection-end-line="7" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+        <state relative-caret-position="157">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

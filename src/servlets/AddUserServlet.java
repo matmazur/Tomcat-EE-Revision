@@ -13,14 +13,14 @@ import java.io.PrintWriter;
 import java.util.Random;
 import java.util.logging.Logger;
 
-@WebServlet("/random")
-public class RandomNumberServlet extends HttpServlet {
+@WebServlet("/add-user")
+public class AddUserServlet extends HttpServlet {
 
-    private static Logger logger = Logger.getLogger(RandomNumberServlet.class.getName());
+    private static Logger logger = Logger.getLogger(AddUserServlet.class.getName());
     private Random random;
 
 
-    public RandomNumberServlet() {
+    public AddUserServlet() {
         super();
         logger.warning("Constructor");
     }
@@ -41,7 +41,6 @@ public class RandomNumberServlet extends HttpServlet {
 
         PrintWriter writer = resp.getWriter();
         HttpSession session = req.getSession(true);
-        session.setMaxInactiveInterval(60);
 
 
         writer.println("<!doctype html>");
@@ -95,12 +94,19 @@ public class RandomNumberServlet extends HttpServlet {
                 session.getAttribute("lastname") != null) {
 
 
+            String firstName = (String) session.getAttribute("firstname");
+            String lastname = (String) session.getAttribute("lastname");
+            String email = (String) session.getAttribute("email");
+            String password = (String) session.getAttribute("password");
+
+
+
             newLine(resp);
-            writer.println("Hello sir " + session.getAttribute("firstname") + " " + session.getAttribute("lastname"));
+            writer.println("Hello sir " + firstName + " " + lastname);
             newLine(resp);
-            writer.println("Your emails is  - " + session.getAttribute("email"));
+            writer.println("Your emails is  - " + email);
             newLine(resp);
-            writer.println("Your password is (wink wink)  - " + session.getAttribute("password"));
+            writer.println("Your password is (wink wink)  - " + password);
 
         }
     }
