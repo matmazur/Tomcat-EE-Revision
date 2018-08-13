@@ -52,14 +52,9 @@ public class SomePostServlet extends HttpServlet {
             session.setAttribute("users",users);
 
 
-
-
         response.sendRedirect("/");
 
-
-
     }
-
 
 }
 

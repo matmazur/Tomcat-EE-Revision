@@ -9,10 +9,16 @@ import java.io.PrintWriter;
 
 public class LoginServlet extends HttpServlet {
 
+
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
+
+        doPost(req,resp);
+    }
+
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse response) throws ServletException, IOException {
-
-
 
         String userParam = req.getParameter("username");
         String username= (String) getServletContext().getAttribute("username");
