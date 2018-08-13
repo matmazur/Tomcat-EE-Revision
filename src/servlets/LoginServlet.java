@@ -16,10 +16,10 @@ public class LoginServlet extends HttpServlet {
 
 
         if (userParam==null || userParam.isEmpty()) {
-            username= (String) req.getAttribute("username");
+            username= (String) req.getSession(true).getAttribute("username");
         }else {
-            req.setAttribute("username", userParam);
-            username= (String) req.getAttribute("username");
+            req.getSession(true).setAttribute("username",userParam);
+            username= (String) req.getSession(true).getAttribute("username");
         }
 
 
