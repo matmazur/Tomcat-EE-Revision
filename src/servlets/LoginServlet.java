@@ -1,8 +1,6 @@
 package servlets;
 
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebInitParam;
-import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -13,11 +11,20 @@ public class LoginServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse response) throws ServletException, IOException {
+        String userParam = req.getParameter("username");
+        String username;
 
 
-        String username = req.getParameter("username");
-        if (username.isEmpty()) {
-            username = getServletConfig().getInitParameter("defaultUsername");
+        if (userParam==null || userParam.isEmpty()) {
+            username= (String) req.getAttribute("username");
+        }else {
+            req.setAttribute("username", userParam);
+            username= (String) req.getAttribute("username");
+        }
+
+
+        if (username==null||username.isEmpty()) {
+             username = getServletConfig().getInitParameter("defaultUsername");
         }
 
 

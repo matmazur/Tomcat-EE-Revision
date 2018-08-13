@@ -62,7 +62,7 @@ public class AddUserServlet extends HttpServlet {
 
         printUserFromFormIfExists(resp, writer, session);
 
-        writer.println("<a href=\"form.html\"> link to form</a>");
+        writer.println("<a href=\"form.jsp\"> link to form</a>");
         writer.println("</body>");
         writer.println("</html>");
 

@@ -10,7 +10,7 @@
 <div>
     <h1><a href="${pageContext.request.contextPath}/add-user">Add user</a></h1>
     <h1><a href="${pageContext.request.contextPath}/hello-servlet">Hello</a></h1>
-    <h1><a href="${pageContext.request.contextPath}login.html">Login</a></h1>
+    <h1><a href="${pageContext.request.contextPath}login.jsp">Login</a></h1>
 
     <div>
             <% List<AdvancedUser> list = (List<AdvancedUser>) session.getAttribute("users"); %>
