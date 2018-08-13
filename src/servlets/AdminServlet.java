@@ -23,20 +23,21 @@ public class AdminServlet extends HttpServlet {
         String username = req.getParameter("username");
 
 
-        if (!username.equals("admin")) {
+        if (username.equals("admin")) {
 
-            req.getRequestDispatcher("/login-servlet").forward(req,resp);
+            resp.setCharacterEncoding("UTF-8");
+            resp.setContentType("text/html");
+            PrintWriter writer = resp.getWriter();
+            writer.println("<html>");
+            writer.println("<head><title>Hello dear admin</title></head>");
+            writer.println("<body>");
+            writer.println("<h1>Hello " + username + " Gonzales</h1>");
+            writer.println("</body>");
+            writer.println("</html>");
+
+        } else {
+            req.getRequestDispatcher("/login-servlet").include(req, resp);
+            resp.getWriter().println("You are not the admin");
         }
-        resp.setCharacterEncoding("UTF-8");
-        resp.setContentType("text/html");
-        PrintWriter writer = resp.getWriter();
-        writer.println("<html>");
-        writer.println("<head><title>Hello dear admin</title></head>");
-        writer.println("<body>");
-        writer.println("<h1>Hello " + username + " Gonzales</h1>");
-        writer.println("</body>");
-        writer.println("</html>");
-
-
     }
 }
