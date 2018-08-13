@@ -11,16 +11,23 @@ public class LoginServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse response) throws ServletException, IOException {
+
+
+
         String userParam = req.getParameter("username");
-        String username;
-
-
-        if (userParam==null || userParam.isEmpty()) {
-            username= (String) req.getSession(true).getAttribute("username");
-        }else {
-            req.getSession(true).setAttribute("username",userParam);
-            username= (String) req.getSession(true).getAttribute("username");
+        String username= (String) getServletContext().getAttribute("username");
+        if (username==null||username.isEmpty()){
+            username=userParam;
+            getServletContext().setAttribute("username",username);
         }
+
+
+//        if (userParam==null || userParam.isEmpty()) {
+//            username= (String) req.getSession(true).getAttribute("username");
+//        }else {
+//            req.getSession(true).setAttribute("username",userParam);
+//            username= (String) req.getSession(true).getAttribute("username");
+//        }
 
 
         if (username==null||username.isEmpty()) {
