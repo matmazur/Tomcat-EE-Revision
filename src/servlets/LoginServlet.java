@@ -9,47 +9,21 @@ import java.io.PrintWriter;
 
 public class LoginServlet extends HttpServlet {
 
-
-    @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
-
-        doPost(req,resp);
-    }
+    private static String USERNAME = "admin";
+    private static String PASSWORD = "pass";
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse response) throws ServletException, IOException {
 
-        String userParam = req.getParameter("username");
-        String username= (String) getServletContext().getAttribute("username");
-        if (username==null||username.isEmpty()){
-            username=userParam;
-            getServletContext().setAttribute("username",username);
+        String reqUsername = req.getParameter("username");
+        String reqPassword = req.getParameter("password");
+
+
+        if (USERNAME.equals(reqUsername)&&PASSWORD.equals(reqPassword)){
+            req.getSession(true).setAttribute("username",reqUsername);
         }
-
-
-//        if (userParam==null || userParam.isEmpty()) {
-//            username= (String) req.getSession(true).getAttribute("username");
-//        }else {
-//            req.getSession(true).setAttribute("username",userParam);
-//            username= (String) req.getSession(true).getAttribute("username");
-//        }
-
-
-        if (username==null||username.isEmpty()) {
-             username = getServletConfig().getInitParameter("defaultUsername");
-        }
-
-
-        response.setCharacterEncoding("UTF-8");
-        response.setContentType("text/html");
-        PrintWriter writer = response.getWriter();
-        writer.println("<html>");
-        writer.println("<head><title>Hello " + username + "</title></head>");
-        writer.println("<body>");
-        writer.println("<h1>Hello " + username + "</h1>");
-        writer.println("</body>");
-        writer.println("</html>");
+        response.sendRedirect("admin.jsp" +
+                "");
 
     }
 }

@@ -11,10 +11,9 @@
     <title>Admin page</title>
 </head>
 <body>
-<h2>Login mr Admin</h2>
-<form action="/admin-servlet" method="post">
-    <input type="text" name="username">
-    <input type="submit" value="Login">
-</form>
+<h2>Hellor mr Admin</h2>
+
+<h3>Your IP address is <%= request.getRemoteAddr()%></h3>
+<a href="/logout-servlet">Logout</a>
 </body>
 </html>
