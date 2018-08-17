@@ -7,8 +7,12 @@
     <title>Hello</title>
 </head>
 <body>
-<h2>Hello, your IP address is <%=request.getRemoteAddr()%></h2>
-<a href="admin.jsp">Admin panel</a>
+<h1>Hello, about your cookies:</h1>
+
+<div><a href="/create-cookie">create cookie</a></div>
+<div><a href="/delete-cookie">delete cookie</a></div>
+<div><a href="/read-cookies">read cookies</a></div>
+
 </body>
 </html>
 
