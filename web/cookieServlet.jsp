@@ -11,6 +11,6 @@
     <title>Title</title>
 </head>
 <body>
-<form method="get" action="/read-cookies"></form>
+<form method="get" action="/cookie-servlet"></form>
 </body>
 </html>
