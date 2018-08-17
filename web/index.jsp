@@ -7,12 +7,12 @@
     <title>Hello</title>
 </head>
 <body>
-<h1>Hello, about your cookies:</h1>
 
 
-<div><a href="/cookie-servlet?value=create">Create a cookie</a></div>
-<div><a href="/cookie-servlet?value=delete">Delete cookies</a></div>
-<div><a href="/cookie-servlet?value=read">Read cookies</a></div>
+
+<div><a href="/sql-servlet?value=all">click to see cities (name,population) in database</a></div>
+<div><a href="/sql-servlet?value=names">click to see city names in database</a></div>
+
 
 </body>
 </html>
