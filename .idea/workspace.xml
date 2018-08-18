@@ -7,11 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a2dad716-1116-4494-a2cc-73c10190ada5" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/listeners/AttributeListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/listeners/AttributeListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/listeners/DbUtilListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/listeners/DbUtilListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/listeners/RequestListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/listeners/RequestListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/listeners/SessionListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/listeners/SessionListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/servlets/SqlServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlets/SqlServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/META-INF/context.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -49,19 +46,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="City.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/beans/City.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
-              <folding>
-                <element signature="e#292#293#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SqlServlet.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SqlServlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/servlets/SqlServlet.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="163">
@@ -69,6 +54,24 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="context.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/META-INF/context.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="73" selection-start-line="12" selection-start-column="73" selection-end-line="12" selection-end-column="73" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="properties.config" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/properties.config">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="139" lean-forward="true" selection-start-column="8" selection-end-column="139" />
             </state>
           </provider>
         </entry>
@@ -137,15 +140,6 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cities-list.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/cities-list.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
         </entry>
@@ -219,6 +213,8 @@
         <option value="$PROJECT_DIR$/src/listeners/RequestListener.java" />
         <option value="$PROJECT_DIR$/src/util/DbUtils.java" />
         <option value="$PROJECT_DIR$/src/servlets/SqlServlet.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/context.xml" />
+        <option value="$PROJECT_DIR$/web/META-INF/context.xml" />
       </list>
     </option>
   </component>
@@ -253,10 +249,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="75" />
-    <option name="y" value="148" />
-    <option name="width" value="1400" />
-    <option name="height" value="1000" />
+    <option name="x" value="70" />
+    <option name="y" value="396" />
+    <option name="width" value="1334" />
+    <option name="height" value="841" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -328,22 +324,7 @@
               <item name="RevisionAndTomcat" type="b2602c69:ProjectViewProjectNode" />
               <item name="RevisionAndTomcat" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RevisionAndTomcat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RevisionAndTomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RevisionAndTomcat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RevisionAndTomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="mysql-connector-java-8.0.12.jar" type="ab9368bb:PsiFileNode" />
+              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -364,6 +345,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\matma\Desktop\RevisionAndTomcat\web\META-INF" />
       <recent name="C:\Users\matma\Desktop\RevisionAndTomcat" />
       <recent name="C:\Users\matma\Desktop\RevisionAndTomcat\src\resources" />
     </key>
@@ -637,12 +619,12 @@
       <workItem from="1534356223823" duration="5517000" />
       <workItem from="1534501706415" duration="5131000" />
       <workItem from="1534540946507" duration="4437000" />
-      <workItem from="1534591800154" duration="8395000" />
+      <workItem from="1534591800154" duration="9850000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66965000" />
+    <option name="totallyTimeSpent" value="68420000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -659,7 +641,7 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Application Servers" order="7" visible="true" weight="0.32931355" />
+      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32931355" />
       <window_info anchor="right" id="Maven Projects" order="9" weight="0.32995737" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info id="Capture Tool" order="7" />
@@ -676,10 +658,10 @@
       <window_info anchor="bottom" id="Java Enterprise" order="10" weight="0.32931355" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.5834879" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32931355" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.38682747" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7759336" visible="true" weight="0.1913646" />
-      <window_info id="Web" order="6" sideWeight="0.22406639" side_tool="true" visible="true" weight="0.1913646" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.50742114" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.38682747" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7760968" visible="true" weight="0.1913646" />
+      <window_info id="Web" order="6" sideWeight="0.22390318" side_tool="true" visible="true" weight="0.1913646" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32931355" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Favorites" order="5" side_tool="true" />
@@ -733,13 +715,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="28" lean-forward="true" selection-start-column="28" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -906,13 +881,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/properties.config">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/listeners/SessionListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -950,6 +918,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlets/SqlServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/util/DbUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="526">
@@ -962,13 +940,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlets/SqlServlet.java">
+    <entry file="file://$PROJECT_DIR$/resources/properties.config">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state>
+          <caret column="139" lean-forward="true" selection-start-column="8" selection-end-column="139" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/META-INF/context.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="73" selection-start-line="12" selection-start-column="73" selection-end-line="12" selection-end-column="73" />
         </state>
       </provider>
     </entry>
