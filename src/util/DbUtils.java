@@ -4,8 +4,10 @@ import com.mchange.v2.c3p0.ComboPooledDataSource;
 
 import javax.sql.ConnectionPoolDataSource;
 import java.beans.PropertyVetoException;
+import java.io.IOException;
 import java.sql.Connection;
 import java.sql.SQLException;
+import java.util.Properties;
 import java.util.logging.Logger;
 
 public class DbUtils {
@@ -14,15 +16,15 @@ public class DbUtils {
     private static Logger logger = Logger.getLogger(DbUtils.class.getName());
 
     private ComboPooledDataSource connectionPool;
+private static final String SETTINGS_FILE="properties.config";
 
-
-    private DbUtils() throws PropertyVetoException {
+    private DbUtils() throws PropertyVetoException, IOException {
         connectionPool = new ComboPooledDataSource();
 
-        connectionPool.setDriverClass("com.mysql.jdbc.Driver");
-        connectionPool.setJdbcUrl("jdbc:mysql://localhost:3306/world?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC");
-        connectionPool.setUser("root");
-        connectionPool.setPassword("pass");
+        connectionPool.setDriverClass(getSettings().getProperty("driverClass"));
+        connectionPool.setJdbcUrl(getSettings().getProperty("jdbcUrl"));
+        connectionPool.setUser(getSettings().getProperty("user"));
+        connectionPool.setPassword(getSettings().getProperty("password"));
 
 
         //POOL SIZES//
@@ -37,10 +39,9 @@ public class DbUtils {
     }
 
 
-    public void close(ComboPooledDataSource c) {
-        c.close();
+    public void close() {
+        connectionPool.close();
     }
-
 
     public static DbUtils getInstance() {
         if (dbUtils == null) {
@@ -48,8 +49,22 @@ public class DbUtils {
                 dbUtils = new DbUtils();
             } catch (PropertyVetoException e) {
                 logger.severe("couldn't create instance of DbUtils");
+            } catch (IOException e) {
+               logger.severe("IO Exception  - > check settings method");
             }
         }
         return dbUtils;
     }
+
+    private Properties getSettings() throws IOException {
+
+        Properties settings = new Properties();
+        settings.load(Thread.currentThread()
+        .getContextClassLoader()
+        .getResource(SETTINGS_FILE)
+        .openStream());
+
+        return settings;
+    }
+
 }
