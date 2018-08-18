@@ -43,7 +43,6 @@ public class SqlServlet extends HttpServlet {
     private List<City> getCityList(HttpServletResponse resp) throws IOException {
 
         try {
-            String driver = "com.mysql.jdbc.Driver";
             Class.forName(driver);
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
@@ -53,7 +52,6 @@ public class SqlServlet extends HttpServlet {
         ResultSet resultSet ;
         Connection conn;
         List<City> cityList = new ArrayList<>();
-        String dbPath = "jdbc:mysql://localhost:3306/world?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
         String sqlQuery = "Select * from city";
 
 
