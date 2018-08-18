@@ -12,15 +12,17 @@ import java.io.IOException;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Logger;
 import java.util.stream.Collectors;
 
 @WebServlet("/sql-servlet")
 public class SqlServlet extends HttpServlet {
-
+private static Logger log = Logger.getLogger(SqlServlet.class.getName());
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
+        log.severe("czek");
         String param = req.getParameter("value");
 
         if (param.equals("all")) {
@@ -28,8 +30,7 @@ public class SqlServlet extends HttpServlet {
             List<City> cities = getCityList(resp);
             req.setAttribute("Cities", cities);
             req.getRequestDispatcher("/cities-list.jsp").forward(req, resp);
-        }
-        if (param.equals("names")) {
+        } else if (param.equals("names")) {
             List<String> names = getCityList(resp)
                     .stream()
                     .map(x -> x.getName())
@@ -40,7 +41,6 @@ public class SqlServlet extends HttpServlet {
             resp.sendError(403);
         }
     }
-
 
 
     private List<City> getCityList(HttpServletResponse resp) throws IOException {

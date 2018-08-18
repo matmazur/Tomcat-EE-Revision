@@ -1,21 +1,21 @@
 package listeners;
 
-import javax.servlet.http.HttpSessionAttributeListener;
-import javax.servlet.http.HttpSessionBindingEvent;
+import javax.servlet.ServletRequestEvent;
+import javax.servlet.ServletRequestListener;
+import javax.servlet.annotation.WebListener;
 
-public class RequestListener implements HttpSessionAttributeListener {
+@WebListener
+public class RequestListener implements ServletRequestListener {
+
     @Override
-    public void attributeAdded(HttpSessionBindingEvent httpSessionBindingEvent) {
+    public void requestDestroyed(ServletRequestEvent servletRequestEvent) {
+        System.out.println("Request destroyed" );
 
     }
 
     @Override
-    public void attributeRemoved(HttpSessionBindingEvent httpSessionBindingEvent) {
-
-    }
-
-    @Override
-    public void attributeReplaced(HttpSessionBindingEvent httpSessionBindingEvent) {
+    public void requestInitialized(ServletRequestEvent servletRequestEvent) {
+        System.out.println("Request initialized" );
 
     }
 }

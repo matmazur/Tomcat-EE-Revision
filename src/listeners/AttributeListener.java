@@ -1,11 +1,15 @@
 package listeners;
 
-import javax.servlet.*;
-import javax.servlet.http.HttpServletRequest;
+import javax.servlet.ServletContextAttributeEvent;
+import javax.servlet.ServletContextAttributeListener;
+import javax.servlet.ServletRequestAttributeEvent;
+import javax.servlet.ServletRequestAttributeListener;
+import javax.servlet.annotation.WebListener;
 import javax.servlet.http.HttpSessionAttributeListener;
 import javax.servlet.http.HttpSessionBindingEvent;
-import javax.servlet.http.HttpSessionListener;
 
+
+@WebListener
 public class AttributeListener implements HttpSessionAttributeListener,
         ServletContextAttributeListener, ServletRequestAttributeListener {
 
