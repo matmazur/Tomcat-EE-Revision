@@ -34,18 +34,13 @@ public class SqlServlet extends HttpServlet {
                     .map(x->x.getName())
                     .collect(Collectors.toList());
             req.setAttribute("Cities",names);
-            req.getRequestDispatcher("/cities-list.jsp").forward(req,resp);
+            req.getRequestDispatcher("/city-names-list.jsp").forward(req,resp);
         } else {
             resp.sendError(403);
         }
     }
 
     private List<City> getCityList(HttpServletResponse resp) throws IOException {
-
-        Statement statement;
-        ResultSet result ;
-        Connection conn;
-        List<City> cities = new ArrayList<>();
 
         try {
             String driver = "com.mysql.jdbc.Driver";
@@ -54,28 +49,34 @@ public class SqlServlet extends HttpServlet {
             e.printStackTrace();
         }
 
+        Statement statement;
+        ResultSet resultSet ;
+        Connection conn;
+        List<City> cityList = new ArrayList<>();
+        String dbPath = "jdbc:mysql://localhost:3306/world?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
+        String sqlQuery = "Select * from city";
+
+
         try {
-            String dbPath = "jdbc:mysql://localhost:3306/world?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
             conn = DriverManager.getConnection(dbPath, "root", "pass");
             statement = conn.createStatement();
+            resultSet = statement.executeQuery(sqlQuery);
 
-            String sqlQuery = "Select * from city";
-
-            result = statement.executeQuery(sqlQuery);
-
-            while (result.next()) {
-                String cityName = result.getString("Name");
-                int population = result.getInt("Population");
-                if (cityName!=null) {
-                    cities.add(new City(cityName, population));
-                }
+            String cityName = null;
+            int cityPopulation = 0;
+            cityList = new ArrayList<>();
+            while (resultSet.next()) {
+                cityName = resultSet.getString("Name");
+                cityPopulation = resultSet.getInt("Population");
+                City city = new City(cityName, cityPopulation);
+                cityList.add(city);
             }
 
-            close(statement, result, conn);
+            close(statement, resultSet, conn);
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        return cities;
+        return cityList;
     }
 
 
