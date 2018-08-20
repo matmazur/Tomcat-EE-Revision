@@ -11,7 +11,7 @@
 <form action="/controller-servlet" method="post">
     <input type="text" placeholder="city" name="city">
     <br>
-    <input type="text" placeholder="country index" name="country">
+    <input type="text" placeholder="country-index" name="country">
     <br>
     <input type="text" placeholder="region" name="district">
     <br>
