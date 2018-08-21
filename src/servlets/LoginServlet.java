@@ -77,3 +77,5 @@ public class LoginServlet extends HttpServlet {
     }
 
 }
+
+// pass" OR '1'='1'; --  <- optional injection into password field
