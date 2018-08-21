@@ -2,7 +2,6 @@ package util;
 
 import com.mchange.v2.c3p0.ComboPooledDataSource;
 
-import javax.sql.ConnectionPoolDataSource;
 import java.beans.PropertyVetoException;
 import java.io.IOException;
 import java.sql.Connection;
@@ -10,15 +9,15 @@ import java.sql.SQLException;
 import java.util.Properties;
 import java.util.logging.Logger;
 
-public class DbUtils {
+public class DbConnector {
 
-    private static DbUtils dbUtils;
-    private static Logger logger = Logger.getLogger(DbUtils.class.getName());
+    private static DbConnector dbUtils;
+    private static Logger logger = Logger.getLogger(DbConnector.class.getName());
 
     private ComboPooledDataSource connectionPool;
 private static final String SETTINGS_FILE="properties.config";
 
-    private DbUtils() throws PropertyVetoException, IOException {
+    private DbConnector() throws PropertyVetoException, IOException {
         connectionPool = new ComboPooledDataSource();
 
         connectionPool.setDriverClass(getSettings().getProperty("driverClass"));
@@ -43,12 +42,12 @@ private static final String SETTINGS_FILE="properties.config";
         connectionPool.close();
     }
 
-    public static DbUtils getInstance() {
+    public static DbConnector getInstance() {
         if (dbUtils == null) {
             try {
-                dbUtils = new DbUtils();
+                dbUtils = new DbConnector();
             } catch (PropertyVetoException e) {
-                logger.severe("couldn't create instance of DbUtils");
+                logger.severe("couldn't create instance of DbConnector");
             } catch (IOException e) {
                logger.severe("IO Exception  - > check settings method");
             }

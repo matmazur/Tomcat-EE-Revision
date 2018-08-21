@@ -1,7 +1,6 @@
 package listeners;
 
-import util.ConnectionProvider;
-import util.DbUtils;
+import util.DbConnector;
 
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
@@ -14,7 +13,7 @@ public class DbUtilListener  implements ServletContextListener {
     public void contextInitialized(ServletContextEvent servletContextEvent) {
         System.out.println("Context DbUtil initialized");
         try {
-            DbUtils.getInstance().getConnection();
+            DbConnector.getInstance().getConnection();
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -22,7 +21,7 @@ public class DbUtilListener  implements ServletContextListener {
 
     @Override
     public void contextDestroyed(ServletContextEvent servletContextEvent) {
-        DbUtils.getInstance().close();
+        DbConnector.getInstance().close();
         System.out.println("Context DbUtil destroyed");
 
     }
