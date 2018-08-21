@@ -14,10 +14,15 @@ import java.util.logging.Logger;
 public class ControllerServlet extends HttpServlet {
 
 private  static Logger logger = Logger.getLogger(ControllerServlet.class.getName());
+
+
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        doPost(req,resp);
+    }
+
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        super.doPost(req, resp);
-
         req.setCharacterEncoding("UTF-8");
         String name = req.getParameter("name");
         String country = req.getParameter("country");
@@ -35,7 +40,10 @@ private  static Logger logger = Logger.getLogger(ControllerServlet.class.getName
         }
 
         String option = req.getParameter("option");
-        String message = null;
+        String message = "";
+
+
+        System.out.println(option);
 
 
         if (option.equals("add")) {
@@ -50,7 +58,7 @@ private  static Logger logger = Logger.getLogger(ControllerServlet.class.getName
 
         req.setAttribute("message",message);
         logger.info("redirecting to the message.jsp");
-        req.getRequestDispatcher("message.jsp").forward(req,resp);
+        req.getRequestDispatcher("/message.jsp").forward(req,resp);
 
     }
 

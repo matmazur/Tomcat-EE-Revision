@@ -9,7 +9,7 @@
 <body>
 <h1>City browser</h1>
 <form action="/controller-servlet" method="post">
-    <input type="text" placeholder="city" name="city">
+    <input type="text" placeholder="city" name="name">
     <br>
     <input type="text" placeholder="country-index" name="country">
     <br>
