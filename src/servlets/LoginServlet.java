@@ -12,10 +12,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.sql.DataSource;
 import java.io.IOException;
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 
 
 @WebServlet("/login-servlet")
@@ -30,7 +27,7 @@ public class LoginServlet extends HttpServlet {
 
         Connection conn = null;
         ResultSet resultSet = null;
-        Statement statement = null;
+        PreparedStatement statement = null;
 
         try {
             Context initialContext = new InitialContext();
@@ -39,16 +36,14 @@ public class LoginServlet extends HttpServlet {
             DataSource ds = (DataSource) envContext.lookup("jdbc/users");
             conn = ds.getConnection();
 
-            statement = conn.createStatement();
+            statement = conn.prepareStatement("SELECT username, password FROM users WHERE username=? AND password=? ");
             String username = request.getParameter("username");
             String password = request.getParameter("password");
-            // pass2" OR '1'='1'; --
-            final String sqlQuery = "SELECT username, password FROM users WHERE "
-                    +"username=" + "\"" + username + "\" "
-                    +"AND "
-                    +"password=" + "\"" + password + "\";";
-            System.out.println(sqlQuery);
-            resultSet = statement.executeQuery(sqlQuery);
+
+            statement.setString(1,username);
+            statement.setString(2,password);
+
+            resultSet = statement.executeQuery();
 
             if(resultSet.next()) {
                 String userFound = resultSet.getString("username");
