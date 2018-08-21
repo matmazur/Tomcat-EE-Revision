@@ -1,25 +1,19 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8"%>
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Main Page</title>
+    <title>Guantanamo Bay Torture Registry</title>
 </head>
 <body>
-<h1>City browser</h1>
-<form action="/controller-servlet" method="post">
-    <input type="text" placeholder="city" name="name">
+<h1>Sign in</h1>
+<form action="/login-servlet" method="post">
+    <input type="text" placeHolder="Username" name="username">
     <br>
-    <input type="text" placeholder="country-index" name="country">
+    <input type="password" placeHolder="Password" name="password">
     <br>
-    <input type="text" placeholder="region" name="district">
-    <br>
-    <input type="number" placeholder="population" name="population">
-    <br>
-    Add<input type="radio" name="option" value="add"> Delete <input type="radio" name="option" value="delete">
-    <br>
-    <input type="submit" value="Send">
+    <input type="submit" value="Login">
 </form>
 </body>
 </html>

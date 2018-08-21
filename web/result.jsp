@@ -4,16 +4,10 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Guantanamo Bay Torture Registry</title>
+    <title>Welcome screen</title>
 </head>
 <body>
-<h1>Sign in</h1>
-<form action="/login-servlet" method="post">
-    <input type="text" placeHolder="Username" name="username">
-    <br>
-    <input type="password" placeHolder="Password" name="password">
-    <br>
-    <input type="submit" value="Login">
-</form>
+<h1>Hello <%= session.getAttribute("username") %></h1>
+<h2>Your user privileges: <%= session.getAttribute("privileges") %></h2>
 </body>
 </html>
