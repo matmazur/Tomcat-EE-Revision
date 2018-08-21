@@ -8,11 +8,12 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.logging.Logger;
 
 @WebServlet("/controller-servlet")
 public class ControllerServlet extends HttpServlet {
 
-
+private  static Logger logger = Logger.getLogger(ControllerServlet.class.getName());
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         super.doPost(req, resp);
@@ -28,7 +29,8 @@ public class ControllerServlet extends HttpServlet {
             try {
                 population = Integer.parseInt(populationString);
             } catch (NumberFormatException e) {
-                System.out.println("populationString was not a proper number format");
+                System.out.println("population String was not a proper number format");
+                logger.warning("wrong format in populationString -> NumberFormatException");
             }
         }
 
@@ -39,12 +41,15 @@ public class ControllerServlet extends HttpServlet {
         if (option.equals("add")) {
             DbUtil.insert(name, country, district, population);
             message = name + " city was added to the database";
+            logger.info(name + " city was added to the database");
         } else if (option.equals("delete")) {
             DbUtil.delete(name);
             message = name + " city was deleted from the database";
+            logger.info(name + " city was deleted from the database");
         }
 
-        req.setAttribute("message",message);;
+        req.setAttribute("message",message);
+        logger.info("redirecting to the message.jsp");
         req.getRequestDispatcher("message.jsp").forward(req,resp);
 
     }

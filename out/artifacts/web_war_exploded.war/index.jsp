@@ -1,19 +1,25 @@
-<%@ page import="beans.AdvancedUser" %>
-<%@ page import="java.util.List" %>
-<%-- Created by IntelliJ IDEA. --%>
-<%@ page contentType="text/html;charset=UTF-8" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+         pageEncoding="UTF-8"%>
+<!DOCTYPE html>
 <html>
 <head>
-    <title>Hello</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Main Page</title>
 </head>
 <body>
-
-
-
-<div><a href="/sql-servlet?value=all">click to see cities (name,population) in database</a></div>
-<div><a href="/sql-servlet?value=names">click to see city names in database</a></div>
-
-
+<h1>City browser</h1>
+<form action="/controller-servlet" method="post">
+    <input type="text" placeholder="city" name="city">
+    <br>
+    <input type="text" placeholder="country-index" name="country">
+    <br>
+    <input type="text" placeholder="region" name="district">
+    <br>
+    <input type="number" placeholder="population" name="population">
+    <br>
+    Add<input type="radio" name="option" value="add"> Delete <input type="radio" name="option" value="delete">
+    <br>
+    <input type="submit" value="Send">
+</form>
 </body>
 </html>
-
