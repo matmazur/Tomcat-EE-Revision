@@ -1,8 +1,5 @@
 package servlets;
 
-import util.ConnectionProvider;
-import util.DbConnector;
-
 import javax.naming.Context;
 import javax.naming.InitialContext;
 import javax.servlet.ServletException;
