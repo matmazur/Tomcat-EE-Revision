@@ -12,5 +12,7 @@
 </head>
 <body>
 <h1>Something definitely didn't go as planned. Issa bug</h1>
+<a href="index.jsp">Go back to the main page</a>
+
 </body>
 </html>

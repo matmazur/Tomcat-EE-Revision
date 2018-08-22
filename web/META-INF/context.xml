@@ -10,5 +10,5 @@
               username="root"
               password="pass"
               driverClassName="com.mysql.jdbc.Driver"
-              url="jdbc:mysql://localhost:3306/library" />
+              url="jdbc:mysql://localhost:3306/library?useUnicode=true&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=UTC" />
 </Context>

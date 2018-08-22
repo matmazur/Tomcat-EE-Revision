@@ -4,16 +4,24 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Guantanamo Bay Torture Registry</title>
+    <title>Library viewer</title>
 </head>
 <body>
-<h1>Sign in</h1>
-<form action="/login-servlet" method="post">
-    <input type="text" placeHolder="Username" name="username">
+<h1>Library viewer</h1>
+<form action="/book-servlet" method="post">
+    <input placeHolder="ISBN" type="text" name="isbn">
     <br>
-    <input type="password" placeHolder="Password" name="password">
+    <input placeHolder="Tytuł" type="text" name="title">
     <br>
-    <input type="submit" value="Login">
+    <input placeHolder="Opis" type="text" name="description">
+    <br>
+
+    Search: <input type="radio" name="option" value="search"> Add: <input type="radio" name="option" value="add">
+    Modify: <input type="radio" name="option" value="update"> Delete: <input type="radio" name="option" value="delete">
+    <br>
+    <input type="submit" value="Send"/>
+
+
 </form>
 </body>
 </html>
