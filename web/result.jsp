@@ -1,4 +1,4 @@
-<%--
+<%@ page import="model.Book" %><%--
   Created by IntelliJ IDEA.
   User: matma
   Date: 22.08.2018
@@ -8,9 +8,22 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>Result page</title>
 </head>
 <body>
+
+<% Book book = (Book) request.getAttribute("book"); %>
+
+<h1>Query result<%=request.getAttribute("option")%>
+</h1>
+<br>
+<p>
+    Title <%= book.getTitle() %>
+    <br>
+    ISBN <%= book.getIsbn() %>
+    <br>
+    Description <%= book.getDescription() %>
+</p>
 
 </body>
 </html>
