@@ -1,5 +1,7 @@
 package servlets;
 
+import dao.BookDao;
+import dao.DaoFactory;
 import dao.MysqlBookDao;
 import model.Book;
 
@@ -22,7 +24,9 @@ public class BookServlet extends HttpServlet {
         String title = req.getParameter("title");
         String description = req.getParameter("description");
         String option = req.getParameter("option");
-        MysqlBookDao dao = new MysqlBookDao();
+
+        DaoFactory factory = DaoFactory.getDaoFactory(DaoFactory.MYSQL_DAO);
+        BookDao dao = factory.getBookDAO();
         Book book = null;
         String operation = null;
 
