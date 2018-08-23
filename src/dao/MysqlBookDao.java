@@ -72,7 +72,7 @@ public class MysqlBookDao implements BookDao {
             prepStmt.setString(1, book.getIsbn());
             prepStmt.setString(2, book.getTitle());
             prepStmt.setString(3, book.getDescription());
-            prepStmt.setString(1, book.getIsbn());
+            prepStmt.setString(4, book.getIsbn());
             int rowsAffected = prepStmt.executeUpdate();
             if (rowsAffected > 0) {
                 result = true;
