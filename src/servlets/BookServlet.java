@@ -1,6 +1,6 @@
 package servlets;
 
-import dao.BookDao;
+import dao.BookDaoImpl;
 import model.Book;
 
 import javax.servlet.ServletException;
@@ -9,7 +9,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.net.HttpCookie;
 
 
 @WebServlet("/book-servlet")
@@ -23,7 +22,7 @@ public class BookServlet extends HttpServlet {
         String title = req.getParameter("title");
         String description = req.getParameter("description");
         String option = req.getParameter("option");
-        BookDao dao = new BookDao();
+        BookDaoImpl dao = new BookDaoImpl();
         Book book = null;
         String operation = null;
 
