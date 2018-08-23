@@ -105,8 +105,7 @@ public class MysqlBookDao implements BookDao {
         return result;
     }
 
-    private void releaseResources(PreparedStatement prepStmt, ResultSet res,
-                                  Connection conn) {
+    private void releaseResources(PreparedStatement prepStmt, ResultSet res, Connection conn) {
         ResourceShutter.close(prepStmt, res, conn);
     }
 }

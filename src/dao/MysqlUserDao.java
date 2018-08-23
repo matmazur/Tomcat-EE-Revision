@@ -109,8 +109,7 @@ public class MysqlUserDao implements UserDao {
         return result;
     }
 
-    private void releaseResources(PreparedStatement prepStmt, ResultSet res,
-                                  Connection conn) {
+    private void releaseResources(PreparedStatement prepStmt, ResultSet res, Connection conn) {
         ResourceShutter.close(prepStmt, res, conn);
 
     }
