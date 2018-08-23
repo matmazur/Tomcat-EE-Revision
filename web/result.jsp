@@ -17,12 +17,13 @@
 <h1>Query result<%=request.getAttribute("option")%>
 </h1>
 <br>
-<p>
+<p><% if (book!=null){%>
     Title <%= book.getTitle() %>
     <br>
     ISBN <%= book.getIsbn() %>
     <br>
     Description <%= book.getDescription() %>
+    <%}%>
 </p>
 
 </body>

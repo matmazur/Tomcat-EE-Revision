@@ -59,28 +59,14 @@ public class MysqlBookDao implements BookDao {
 
     public boolean delete(Book book) {
 
-        Connection conn = null;
-        PreparedStatement prepStmt = null;
-        boolean result = false;
-        try {
-            conn = ConnectionProvider.getConnection();
-            prepStmt = conn.prepareStatement(DELETE);
-            prepStmt.setString(1, book.getIsbn());
-            int rowsAffected = prepStmt.executeUpdate();
-            if (rowsAffected > 0) {
-                result = true;
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        } finally {
-            releaseResources(prepStmt, null, conn);
-        }
+        SqlParameterSource source = new MapSqlParameterSource("isbn", book.getIsbn());
+        int rowsAffected = namedTemplate.update(DELETE, source);
+        boolean result = ifEnoughRowsAffectedReturnTrue(rowsAffected);
         return result;
     }
 
-
     private Book ifBookExist(Book resultBook, List<Book> bookList) {
-        if (bookList.get(0) != null) {
+        if (!bookList.isEmpty()&&bookList.get(0) != null) {
             resultBook = bookList.get(0);
         }
         return resultBook;
@@ -94,20 +80,4 @@ public class MysqlBookDao implements BookDao {
         return result;
     }
 
-    private void releaseResources(PreparedStatement prepStmt, ResultSet res, Connection conn) {
-        ResourceShutter.close(prepStmt, res, conn);
-    }
-    private class MysqlBookMapper implements org.springframework.jdbc.core.RowMapper<Book> {
-
-        @Override
-        public Book mapRow(ResultSet resultSet, int i) throws SQLException {
-            Book book = new Book();
-            book.setIsbn(resultSet.getString("isbn"));
-            book.setTitle(resultSet.getString("title"));
-            book.setDescription(resultSet.getString("description"));
-
-            return book;
-
-        }
-    }
 }
