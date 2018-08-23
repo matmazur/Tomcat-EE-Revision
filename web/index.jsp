@@ -4,24 +4,10 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Library viewer</title>
+    <title>Main page</title>
 </head>
 <body>
-<h1>Library viewer</h1>
-<form action="/book-servlet" method="post">
-    <input placeHolder="ISBN" type="text" name="isbn">
-    <br>
-    <input placeHolder="Tytuł" type="text" name="title">
-    <br>
-    <input placeHolder="Opis" type="text" name="description">
-    <br>
-
-    Search: <input type="radio" name="option" value="search"> Add: <input type="radio" name="option" value="add">
-    Modify: <input type="radio" name="option" value="update"> Delete: <input type="radio" name="option" value="delete">
-    <br>
-    <input type="submit" value="Send"/>
-
-
-</form>
+<h1>Main index page</h1>
+<a href="admin.jsp">admin page</a>
 </body>
 </html>

@@ -5,5 +5,22 @@
 		  http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
          version="2.5">
 
+<security-constraint>
+    <web-resource-collection>
+        <web-resource-name>Some name</web-resource-name>
+        <url-pattern>/admin.jsp</url-pattern>
+        <http-method>GET</http-method>
+    </web-resource-collection>
 
+
+    <auth-constraint>
+        <role-name>admin</role-name>
+    </auth-constraint>
+
+
+</security-constraint>
+
+    <login-config>
+        <auth-method>BASIC</auth-method>
+    </login-config>
 </web-app>

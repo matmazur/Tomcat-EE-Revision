@@ -1,4 +1,4 @@
-<%--
+<%@ page import="model.Book" %><%--
   Created by IntelliJ IDEA.
   User: matma
   Date: 22.08.2018
@@ -8,11 +8,9 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Error page</title>
+    <title>Secret admin-admin adoration page</title>
 </head>
 <body>
-<h1>Something definitely didn't go as planned. Issa bug</h1>
-<a href="index.jsp">Go back to the main page</a>
-
+<h1>OOOO Yu So Sexi So sTroooong Mister ADmiinn</h1>
 </body>
 </html>
