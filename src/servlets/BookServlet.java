@@ -1,6 +1,6 @@
 package servlets;
 
-import dao.BookDaoImpl;
+import dao.MysqlBookDao;
 import model.Book;
 
 import javax.servlet.ServletException;
@@ -22,7 +22,7 @@ public class BookServlet extends HttpServlet {
         String title = req.getParameter("title");
         String description = req.getParameter("description");
         String option = req.getParameter("option");
-        BookDaoImpl dao = new BookDaoImpl();
+        MysqlBookDao dao = new MysqlBookDao();
         Book book = null;
         String operation = null;
 

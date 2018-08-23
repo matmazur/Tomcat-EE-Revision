@@ -8,7 +8,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class BookDaoImpl {
+public class MysqlBookDao implements BookDao {
 
 
     private final static String CREATE = "INSERT INTO book(isbn, title, description) VALUES(?, ?, ?);";
