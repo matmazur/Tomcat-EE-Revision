@@ -1,7 +1,6 @@
 package dao;
 
 import model.User;
-import model.User;
 import utils.ConnectionProvider;
 import utils.ResourceShutter;
 
@@ -12,15 +11,11 @@ import java.sql.SQLException;
 
 public class MysqlUserDao implements UserDao {
 
-
-
     private final static String CREATE = "INSERT INTO user(pesel, firstname,lastname) VALUES(?, ?, ?);";
     private final static String READ = "SELECT pesel, firstname,lastname FROM user WHERE pesel = ?;";
     private final static String UPDATE = "UPDATE user SET pesel=?, firstname=?, lasname=? WHERE pesel = ?;";
     private final static String DELETE = "DELETE FROM user WHERE pesel=?;";
-    
-    
-    
+
     @Override
     public boolean create(User user) {
         Connection conn = null;
@@ -55,7 +50,7 @@ public class MysqlUserDao implements UserDao {
             prepStmt = conn.prepareStatement(READ);
             prepStmt.setString(1, pesel);
             resultSet = prepStmt.executeQuery();
-            if(resultSet.next()) {
+            if (resultSet.next()) {
                 resultUser = new User();
                 resultUser.setPesel(resultSet.getString("pesel"));
                 resultUser.setFirstname(resultSet.getString("firstname"));
@@ -114,10 +109,9 @@ public class MysqlUserDao implements UserDao {
         return result;
     }
 
-
     private void releaseResources(PreparedStatement prepStmt, ResultSet res,
                                   Connection conn) {
-        ResourceShutter.close(prepStmt,res,conn);
+        ResourceShutter.close(prepStmt, res, conn);
 
     }
 }

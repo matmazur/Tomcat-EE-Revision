@@ -11,12 +11,10 @@ import java.sql.SQLException;
 
 public class MysqlBookDao implements BookDao {
 
-
     private final static String CREATE = "INSERT INTO book(isbn, title, description) VALUES(?, ?, ?);";
     private final static String READ = "SELECT isbn, title, description FROM book WHERE isbn = ?;";
     private final static String UPDATE = "UPDATE book SET isbn=?, title=?, description=? WHERE isbn = ?;";
     private final static String DELETE = "DELETE FROM book WHERE isbn=?;";
-
 
     public boolean create(Book book) {
         Connection conn = null;
@@ -50,7 +48,7 @@ public class MysqlBookDao implements BookDao {
             prepStmt = conn.prepareStatement(READ);
             prepStmt.setString(1, isbn);
             resultSet = prepStmt.executeQuery();
-            if(resultSet.next()) {
+            if (resultSet.next()) {
                 resultBook = new Book();
                 resultBook.setIsbn(resultSet.getString("isbn"));
                 resultBook.setTitle(resultSet.getString("title"));
@@ -74,6 +72,7 @@ public class MysqlBookDao implements BookDao {
             prepStmt.setString(1, book.getIsbn());
             prepStmt.setString(2, book.getTitle());
             prepStmt.setString(3, book.getDescription());
+            prepStmt.setString(1, book.getIsbn());
             int rowsAffected = prepStmt.executeUpdate();
             if (rowsAffected > 0) {
                 result = true;
@@ -108,7 +107,6 @@ public class MysqlBookDao implements BookDao {
 
     private void releaseResources(PreparedStatement prepStmt, ResultSet res,
                                   Connection conn) {
-        ResourceShutter.close(prepStmt,res,conn);
-
+        ResourceShutter.close(prepStmt, res, conn);
     }
 }
