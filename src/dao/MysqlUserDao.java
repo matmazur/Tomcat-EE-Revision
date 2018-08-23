@@ -1,6 +1,12 @@
 package dao;
 
+import model.Book;
 import model.User;
+import org.springframework.jdbc.core.BeanPropertyRowMapper;
+import org.springframework.jdbc.core.namedparam.BeanPropertySqlParameterSource;
+import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
+import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
+import org.springframework.jdbc.core.namedparam.SqlParameterSource;
 import utils.ConnectionProvider;
 import utils.ResourceShutter;
 
@@ -8,109 +14,75 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.List;
 
 public class MysqlUserDao implements UserDao {
 
-    private final static String CREATE = "INSERT INTO user(pesel, firstname,lastname) VALUES(?, ?, ?);";
-    private final static String READ = "SELECT pesel, firstname,lastname FROM user WHERE pesel = ?;";
-    private final static String UPDATE = "UPDATE user SET pesel=?, firstname=?, lasname=? WHERE pesel = ?;";
-    private final static String DELETE = "DELETE FROM user WHERE pesel=?;";
+    private final static String CREATE = "INSERT INTO user(pesel, firstname,lastname) VALUES(:pesel, :firstname, :lastname);";
+    private final static String READ = "SELECT pesel, firstname,lastname FROM user WHERE pesel = :pesel;";
+    private final static String UPDATE = "UPDATE user SET pesel=:pesel, firstname=:firstname, lasname=:lastname WHERE pesel = :pesel;";
+    private final static String DELETE = "DELETE FROM user WHERE pesel=:pesel;";
+
+
+    NamedParameterJdbcTemplate template;
+
+
+    public MysqlUserDao() {
+        template = new NamedParameterJdbcTemplate(ConnectionProvider.getDSInstance());
+    }
 
     @Override
     public boolean create(User user) {
-        Connection conn = null;
-        PreparedStatement prepStmt = null;
-        boolean result = false;
-        try {
-            conn = ConnectionProvider.getConnection();
-            prepStmt = conn.prepareStatement(CREATE);
-            prepStmt.setString(1, user.getPesel());
-            prepStmt.setString(2, user.getFirstname());
-            prepStmt.setString(3, user.getLastname());
-            int rowsAffected = prepStmt.executeUpdate();
-            if (rowsAffected > 0) {
-                result = true;
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        } finally {
-            releaseResources(prepStmt, null, conn);
-        }
+        BeanPropertySqlParameterSource source = new BeanPropertySqlParameterSource(user);
+
+        int rowsAffected = template.update(CREATE, source);
+        boolean result = ifEnoughRowsAffectedReturnTrue(rowsAffected);
         return result;
+
     }
 
     @Override
     public User read(String pesel) {
-        Connection conn = null;
-        PreparedStatement prepStmt = null;
-        ResultSet resultSet = null;
+
         User resultUser = null;
-        try {
-            conn = ConnectionProvider.getConnection();
-            prepStmt = conn.prepareStatement(READ);
-            prepStmt.setString(1, pesel);
-            resultSet = prepStmt.executeQuery();
-            if (resultSet.next()) {
-                resultUser = new User();
-                resultUser.setPesel(resultSet.getString("pesel"));
-                resultUser.setFirstname(resultSet.getString("firstname"));
-                resultUser.setLastname(resultSet.getString("lastname"));
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        } finally {
-            releaseResources(prepStmt, resultSet, conn);
-        }
+        SqlParameterSource source = new MapSqlParameterSource("pesel", pesel);
+        List<User> bookList = template.query(READ, source, BeanPropertyRowMapper.newInstance(User.class));
+
+        resultUser = ifUserExists(resultUser, bookList);
         return resultUser;
     }
 
     @Override
     public boolean update(User user) {
-        Connection conn = null;
-        PreparedStatement prepStmt = null;
-        boolean result = false;
-        try {
-            conn = ConnectionProvider.getConnection();
-            prepStmt = conn.prepareStatement(UPDATE);
-            prepStmt.setString(1, user.getPesel());
-            prepStmt.setString(2, user.getFirstname());
-            prepStmt.setString(3, user.getLastname());
-            prepStmt.setString(4, user.getPesel());
-            int rowsAffected = prepStmt.executeUpdate();
-            if (rowsAffected > 0) {
-                result = true;
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        } finally {
-            releaseResources(prepStmt, null, conn);
-        }
+        BeanPropertySqlParameterSource source = new BeanPropertySqlParameterSource(user);
+
+        int rowsAffected = template.update(UPDATE, source);
+        boolean result = ifEnoughRowsAffectedReturnTrue(rowsAffected);
         return result;
     }
 
     @Override
     public boolean delete(User user) {
-        Connection conn = null;
-        PreparedStatement prepStmt = null;
+        SqlParameterSource source = new MapSqlParameterSource("pesel", user.getPesel());
+
+        int rowsAffected = template.update(DELETE, source);
+        boolean result = ifEnoughRowsAffectedReturnTrue(rowsAffected);
+        return result;
+    }
+
+    private User ifUserExists(User resultUser, List<User> userList) {
+        if (!userList.isEmpty() && userList.get(0) != null) {
+            resultUser = userList.get(0);
+        }
+        return resultUser;
+    }
+
+    private boolean ifEnoughRowsAffectedReturnTrue(int rowsAffected) {
         boolean result = false;
-        try {
-            conn = ConnectionProvider.getConnection();
-            prepStmt = conn.prepareStatement(DELETE);
-            prepStmt.setString(1, user.getPesel());
-            int rowsAffected = prepStmt.executeUpdate();
-            if (rowsAffected > 0) {
-                result = true;
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        } finally {
-            releaseResources(prepStmt, null, conn);
+        if (rowsAffected > 0) {
+            result = true;
         }
         return result;
     }
 
-    private void releaseResources(PreparedStatement prepStmt, ResultSet res, Connection conn) {
-        ResourceShutter.close(prepStmt, res, conn);
-
-    }
 }
