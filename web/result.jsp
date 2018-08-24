@@ -16,9 +16,7 @@
     ISBN <%= book.getIsbn() %>
     <br>
     Description <%= book.getDescription() %>
-    <%}else{ %>
-    <%=response.getWriter().print("Not here")%>
-    <%}%>
+    <%}else{ response.getWriter().print("Not here");}%>
 </p>
 </body>
 </html>
