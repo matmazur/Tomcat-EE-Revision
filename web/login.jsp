@@ -8,13 +8,13 @@
 <body>
 <h1>Sign in</h1>
 
-<form action="/login-check" method="post">
+<form action="j_security_check" method="post">
     Login: <label>
-    <input type="text" name="username">
+    <input type="text" name="j_username">
 </label>
     <br>
     Password: <label>
-    <input type="password" name="password">
+    <input type="password" name="j_password">
 </label>
     <input type="submit" value="Login">
 

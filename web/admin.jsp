@@ -11,9 +11,6 @@
     <title>Secret admin-admin adoration page</title>
 </head>
 <body>
-
-<% Boolean is = (Boolean) request.getSession().getAttribute("admin");%>
-<%if (is!=null&& is) {%>
 <h1>OOOO Yu So Sexi So sTroooong Mister ADmiinn</h1>
 <h1>Library viewer</h1>
 
@@ -32,10 +29,6 @@
     <br>
     <input type="submit" value="Send"/>
 
-
-    <%} else {%>
-    <h1>Have we met?</h1>
-    <%}%>
 </form>
 </body>
 </html>
