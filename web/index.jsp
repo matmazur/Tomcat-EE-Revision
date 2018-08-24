@@ -9,5 +9,14 @@
 <body>
 <h1>Main index page</h1>
 <a href="admin.jsp">admin page</a>
+<br>
+<a href="user.jsp">user page</a>
+
+<% if (response.getStatus()!=200) {
+    response.sendRedirect("index.jsp");
+    System.out.println("401");
+}
+%>
+
 </body>
 </html>

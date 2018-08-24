@@ -16,11 +16,11 @@
     <auth-constraint>
         <role-name>admin</role-name>
     </auth-constraint>
-
-
 </security-constraint>
-
     <login-config>
         <auth-method>BASIC</auth-method>
+
     </login-config>
+
+
 </web-app>
