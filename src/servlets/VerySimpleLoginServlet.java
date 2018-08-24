@@ -24,9 +24,11 @@ public class VerySimpleLoginServlet extends HttpServlet {
 
        if (creds.containsKey(username)){
            if (creds.get(username).equals(password)){
+               req.getSession(true).setAttribute("admin",true);
                resp.sendRedirect("admin.jsp");
            }
        }
+       else resp.sendRedirect("login-error.jsp");
     }
 }
 

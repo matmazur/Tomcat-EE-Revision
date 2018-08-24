@@ -8,7 +8,7 @@
 </head>
 <body>
 <h1>Main index page</h1>
-<a href="admin.jsp">admin page</a>
+<a href="login.jsp">admin page</a>
 <br>
 <a href="user.jsp">user page</a>
 

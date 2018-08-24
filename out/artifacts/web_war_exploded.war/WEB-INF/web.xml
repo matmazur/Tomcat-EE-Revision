@@ -8,7 +8,7 @@
 <security-constraint>
     <web-resource-collection>
         <web-resource-name>Some name</web-resource-name>
-        <url-pattern>/admin.jsp</url-pattern>
+        <url-pattern>/login.jsp</url-pattern>
         <http-method>GET</http-method>
     </web-resource-collection>
 

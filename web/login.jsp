@@ -8,7 +8,7 @@
 <body>
 <h1>Sign in</h1>
 
-<form action="login-check" method="post">
+<form action="/login-check" method="post">
     Login: <label>
     <input type="text" name="username">
 </label>

@@ -11,10 +11,14 @@
     <title>Secret admin-admin adoration page</title>
 </head>
 <body>
+
+<% Boolean is = (Boolean) request.getSession().getAttribute("admin");%>
+<%if (is!=null&& is) {%>
 <h1>OOOO Yu So Sexi So sTroooong Mister ADmiinn</h1>
 <h1>Library viewer</h1>
 
-<h1><%=response.getStatus()%></h1>
+<h1><%=response.getStatus()%>
+</h1>
 <form action="/book-servlet" method="post">
     <input placeHolder="ISBN" type="text" name="isbn">
     <br>
@@ -22,10 +26,16 @@
     <br>
     <input placeHolder="Opis" type="text" name="description">
     <br>
-    Search: <input type="radio" name="option" value="search" checked> Add: <input type="radio" name="option" value="add">
+    Search: <input type="radio" name="option" value="search" checked> Add: <input type="radio" name="option"
+                                                                                  value="add">
     Modify: <input type="radio" name="option" value="update"> Delete: <input type="radio" name="option" value="delete">
     <br>
     <input type="submit" value="Send"/>
+
+
+    <%} else {%>
+    <h1>Have we met?</h1>
+    <%}%>
 </form>
 </body>
 </html>
