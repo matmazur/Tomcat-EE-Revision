@@ -17,6 +17,16 @@
     System.out.println("401");
 }
 %>
+<br><br><br>
+
+<form action="id.jsp">
+    Name: <input type="text" name="firstname" placeholder="firstname"/>
+    <br>
+    Lastname: <input type="text" name="lastname" placeholder="lastname">
+    <br>
+    <input type="submit" value="Send">
+</form>
+
 
 </body>
 </html>
