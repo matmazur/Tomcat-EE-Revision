@@ -27,6 +27,9 @@
     <input type="submit" value="Send">
 </form>
 
+<a href="forward.jsp">Forward</a>
+<br>
+<a href="include.jsp">Include</a>
 
 </body>
 </html>
