@@ -13,7 +13,10 @@
 <body>
 
 <jsp:useBean id="user" class="model.User">
-    <jsp:setProperty property="*" name="user"/>
+    <jsp:setProperty property="firstname" name="user" param="firstname"/>
+    <jsp:setProperty property="lastname" name="user" param="lastname"/>
+
+
 </jsp:useBean>
 <p>Name : <jsp:getProperty name="user" property="firstname"/></p>
 <p>Last name : <jsp:getProperty name="user" property="lastname"/></p>
