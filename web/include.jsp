@@ -8,15 +8,17 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
+
     <title>Include page</title>
 </head>
 <body>
 
-Some text here - before
+<p>Some text here - before</p>
 
 <jsp:include page="hidden-page.jsp"/>
 
-Some text here - after
+
+<p>Some text here - after</p>
 
 </body>
 </html>

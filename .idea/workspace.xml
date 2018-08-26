@@ -7,9 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a2dad716-1116-4494-a2cc-73c10190ada5" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/web/forward.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/include.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/hidden-page.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/forward.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/forward.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/include.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/include.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,15 +39,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="admin.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/admin.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="34" selection-start-line="34" selection-end-line="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/User.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -116,8 +108,17 @@
       <file leaf-file-name="include.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/include.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="170">
+              <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hidden-page.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/hidden-page.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -125,8 +126,8 @@
       <file leaf-file-name="forward.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/forward.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" selection-start-line="14" selection-end-line="19" />
+            <state relative-caret-position="187">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -166,7 +167,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/read-cookies.jsp" />
         <option value="$PROJECT_DIR$/src/servlets/CookieReader.java" />
         <option value="$PROJECT_DIR$/src/servlets/DeleteCookieServlet.java" />
         <option value="$PROJECT_DIR$/src/servlets/CreateCookieServlet.java" />
@@ -215,6 +215,7 @@
         <option value="$PROJECT_DIR$/src/model/User.java" />
         <option value="$PROJECT_DIR$/web/profile.jsp" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
+        <option value="$PROJECT_DIR$/web/hidden-page.jsp" />
         <option value="$PROJECT_DIR$/web/forward.jsp" />
         <option value="$PROJECT_DIR$/web/include.jsp" />
       </list>
@@ -654,12 +655,12 @@
       <workItem from="1535048266890" duration="888000" />
       <workItem from="1535111936517" duration="9244000" />
       <workItem from="1535202547223" duration="239000" />
-      <workItem from="1535277737816" duration="2685000" />
+      <workItem from="1535277737816" duration="3281000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="110945000" />
+    <option name="totallyTimeSpent" value="111541000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -685,7 +686,7 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.28478664" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.28478664" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32931355" />
       <window_info anchor="bottom" id="Messages" order="9" weight="0.32931355" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
@@ -695,9 +696,9 @@
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.5834879" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.50742114" />
       <window_info anchor="bottom" id="Spring" order="14" weight="0.32931355" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.20037106" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.9303944" visible="true" weight="0.18176973" />
-      <window_info id="Web" order="6" sideWeight="0.06960557" side_tool="true" visible="true" weight="0.18176973" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.20037106" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.9312581" visible="true" weight="0.18176973" />
+      <window_info id="Web" order="6" sideWeight="0.068741895" side_tool="true" visible="true" weight="0.18176973" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="right" id="Coverage" order="8" side_tool="true" visible="true" weight="0.14232409" />
@@ -751,7 +752,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/cookieServlet.jsp" />
     <entry file="file://$PROJECT_DIR$/src/servlets/CookieServlet.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/function/Function.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1002,17 +1002,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/forward.jsp">
+    <entry file="file://$PROJECT_DIR$/web/hidden-page.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="14" selection-start-line="14" selection-end-line="19" />
+          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/forward.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/include.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="170">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
         </state>
       </provider>
     </entry>
