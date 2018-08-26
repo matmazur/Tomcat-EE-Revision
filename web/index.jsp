@@ -19,7 +19,7 @@
 %>
 <br><br><br>
 
-<form action="id.jsp">
+<form action="profile.jsp">
     <input type="text" name="firstname" placeholder="firstname"/>
     <br>
     <input type="text" name="lastname" placeholder="lastname">
