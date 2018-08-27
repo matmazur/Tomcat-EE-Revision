@@ -28,6 +28,5 @@
 
 </c:choose>
 
-
 </body>
 </html>
