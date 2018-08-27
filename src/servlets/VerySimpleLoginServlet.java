@@ -19,14 +19,12 @@ public class VerySimpleLoginServlet extends HttpServlet {
         creds.put("admin","password");
 
 
-        String username = req.getParameter("username");
-        String password = req.getParameter("password");
+        String username = req.getParameter("j_username");
+        String password = req.getParameter("j_password");
 
-       if (creds.containsKey(username)){
-           if (creds.get(username).equals(password)){
+       if (creds.containsKey(username) && creds.get(username).equals(password)){
                req.getSession(true).setAttribute("admin",true);
                resp.sendRedirect("admin.jsp");
-           }
        }
        else resp.sendRedirect("login-error.jsp");
     }

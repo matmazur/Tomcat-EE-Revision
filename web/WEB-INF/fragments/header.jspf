@@ -1,0 +1,6 @@
+<nav>
+    <h1>Main index page</h1>
+    <br>
+    <a href="admin.jsp">Admin page</a>
+    <a href="user.jsp">User page</a>
+</nav>
