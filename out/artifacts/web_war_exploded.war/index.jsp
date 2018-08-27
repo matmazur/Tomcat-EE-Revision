@@ -10,7 +10,13 @@
 
 <jsp:include page="WEB-INF/fragments/header.jspf"/>
 <br>
-<h4>${header['user-agent']}</h4>
+<h4>User agent : ${header['user-agent']}</h4>
+
+<p> Let's see if session scope works, here .. before we bring user let's look at nothing.. come on.. type it in..</p>
+<p> name is : ${sessionScope.user.firstname}</p>
+<p> surname is : ${sessionScope.user.lastname}</p>
+
+
 
 <form action="profile.jsp">
     <input type="text" name="firstname" placeholder="firstname"/>

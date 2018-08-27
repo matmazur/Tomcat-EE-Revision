@@ -11,12 +11,10 @@
     <title>profile page</title>
 </head>
 <body>
+<jsp:useBean id="user" class="model.User" scope="session">
 
-<jsp:useBean id="user" class="model.User">
-    <jsp:setProperty name="user"  property="firstname" value="${param.firstname}"/>
-    <jsp:setProperty name="user" property="lastname" value="${param.lastname}"/>
-
-
+    <jsp:setProperty name="user"  property="firstname" />
+    <jsp:setProperty name="user" property="lastname" />
 </jsp:useBean>
 <p>Name :
     <jsp:getProperty name="user" property="firstname"/>
