@@ -12,6 +12,8 @@
 </head>
 <body>
 <h1>Library viewer</h1>
+<jsp:include page="WEB-INF/fragments/header.jspf"/>
+
 <form action="/book-servlet" method="post">
     <input placeHolder="ISBN" type="text" name="isbn">
     <br>
@@ -19,5 +21,7 @@
     <br>
     <input type="submit" value="Submit"/>
 </form>
+
+<jsp:include page="WEB-INF/fragments/footer.jspf"/>
 </body>
 </html>

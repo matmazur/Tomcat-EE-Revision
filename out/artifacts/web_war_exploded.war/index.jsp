@@ -7,8 +7,8 @@
 </head>
 <body>
 <h1>Main index page</h1>
-<jsp:include page="WEB-INF/fragments/header.jspf"/>
 
+<jsp:include page="WEB-INF/fragments/header.jspf"/>
 <br>
 
 <form action="profile.jsp">
@@ -18,6 +18,7 @@
     <br>
     <input type="submit" value="Send">
 </form>
+
 <br>
 <jsp:include page="WEB-INF/fragments/footer.jspf"/>
 </body>

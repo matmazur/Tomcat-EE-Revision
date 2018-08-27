@@ -6,6 +6,7 @@
     <title>Main page</title>
 </head>
 <body>
+<h1>Main index page</h1>
 
 <jsp:include page="WEB-INF/fragments/header.jspf"/>
 <br>
