@@ -10,6 +10,7 @@
 
 <jsp:include page="WEB-INF/fragments/header.jspf"/>
 <br>
+<h4>${header['user-agent']}</h4>
 
 <form action="profile.jsp">
     <input type="text" name="firstname" placeholder="firstname"/>

@@ -18,7 +18,6 @@
             <http-method>GET</http-method>
         </web-resource-collection>
 
-
         <auth-constraint>
             <role-name>admin_role</role-name>
         </auth-constraint>

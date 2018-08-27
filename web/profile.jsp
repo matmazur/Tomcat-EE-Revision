@@ -13,13 +13,17 @@
 <body>
 
 <jsp:useBean id="user" class="model.User">
-    <jsp:setProperty property="firstname" name="user" param="firstname"/>
-    <jsp:setProperty property="lastname" name="user" param="lastname"/>
+    <jsp:setProperty name="user"  property="firstname" value="${param.firstname}"/>
+    <jsp:setProperty name="user" property="lastname" value="${param.lastname}"/>
 
 
 </jsp:useBean>
-<p>Name : <jsp:getProperty name="user" property="firstname"/></p>
-<p>Last name : <jsp:getProperty name="user" property="lastname"/></p>
+<p>Name :
+    <jsp:getProperty name="user" property="firstname"/>
+</p>
+<p>Last name :
+    <jsp:getProperty name="user" property="lastname"/>
+</p>
 
 
 </body>

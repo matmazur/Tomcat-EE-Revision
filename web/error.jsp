@@ -10,7 +10,7 @@
 <head>
     <title>Result page</title>
     <style>
-        .elo{
+        .elo {
             text-align: center;
         }
     </style>
@@ -19,10 +19,9 @@
 <br>
 <p>
 
-<div class="elo">
-    <h1>It's kinda 404 error</h1>
-    <%="What you're looking for is not here"%>
-</>
+    <div class="elo">
+        <h1>It's kinda 404 error</h1>
+<p>What you're looking for is not here"%</p>
 
 </p>
 </body>
