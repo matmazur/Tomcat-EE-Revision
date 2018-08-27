@@ -19,6 +19,8 @@
     <br>
     Search: <input type="radio" name="option" value="search" checked>
     <br>
+    Show all: <input type="radio" name="option" value="show-all">
+    <br>
     <input type="submit" value="Submit"/>
 </form>
 

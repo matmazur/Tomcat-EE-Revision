@@ -1,14 +1,20 @@
 package servlets;
+
 import dao.BookDao;
 import dao.DaoFactory;
 import dao.MysqlBookDao;
 import model.Book;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
+
 @WebServlet("/book-servlet")
 public class BookServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -22,7 +28,14 @@ public class BookServlet extends HttpServlet {
         Book book = null;
         String operation = null;
         boolean result = false;
-        if ("search".equals(option)) {
+
+        if ("show-all".equals(option)) {
+            List<String> list = dao.showAll().stream().map(Book::getTitle).collect(Collectors.toList());
+            if (list != null && !list.isEmpty()) {
+                req.setAttribute("list", list);
+                req.getRequestDispatcher("book-list.jsp").forward(req, resp);
+            }
+        } else if ("search".equals(option)) {
             book = dao.read(isbn);
             result = book != null;
             operation = "search";
@@ -39,8 +52,12 @@ public class BookServlet extends HttpServlet {
             result = dao.delete(book);
             operation = "delete";
         }
-        ForwardIfBookIsValidAndResultIsTrue(req, resp, book, operation, result);
+
+
+       ForwardIfBookIsValidAndResultIsTrue(req, resp, book, operation, result);
+
     }
+
     private void ForwardIfBookIsValidAndResultIsTrue(HttpServletRequest req, HttpServletResponse resp, Book book, String operation, boolean result) throws ServletException, IOException {
         if (book != null && result) {
             req.setAttribute("option", operation);

@@ -5,6 +5,7 @@
   Time: 15:13
   To change this template use File | Settings | File Templates.
 --%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -13,8 +14,8 @@
 <body>
 <jsp:useBean id="user" class="model.User" scope="session">
 
-    <jsp:setProperty name="user"  property="firstname" />
-    <jsp:setProperty name="user" property="lastname" />
+    <jsp:setProperty name="user" property="firstname" value="${param.firstname}"/>
+    <jsp:setProperty name="user" property="lastname" value="${param.lastname}"/>
 </jsp:useBean>
 <p>Name :
     <jsp:getProperty name="user" property="firstname"/>

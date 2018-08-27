@@ -21,6 +21,8 @@ public class MysqlBookDao implements BookDao {
     private final static String READ = "SELECT isbn, title, description FROM book WHERE isbn = :isbn;";
     private final static String UPDATE = "UPDATE book SET isbn=:isbn, title=:title, description=:description WHERE isbn = :isbn;";
     private final static String DELETE = "DELETE FROM book WHERE isbn=:isbn;";
+    private final static String SHOW_ALL = "SELECT isbn, title, description FROM book";
+
 
 
     private NamedParameterJdbcTemplate namedTemplate;
@@ -42,13 +44,19 @@ public class MysqlBookDao implements BookDao {
     public Book read(String isbn) {
 
         Book resultBook = null;
-
         SqlParameterSource source = new MapSqlParameterSource("isbn", isbn);
         List<Book> bookList = namedTemplate.query(READ,source,BeanPropertyRowMapper.newInstance(Book.class));
         resultBook = ifBookExist(resultBook, bookList);
         return resultBook;
     }
 
+    public List<Book> showAll() {
+
+        Book resultBook = null;
+        List<Book> bookList = namedTemplate.query(SHOW_ALL,BeanPropertyRowMapper.newInstance(Book.class));
+        resultBook = ifBookExist(resultBook, bookList);
+        return bookList;
+    }
 
     public boolean update(Book book) {
         BeanPropertySqlParameterSource beanParamSource = new BeanPropertySqlParameterSource(book);
@@ -64,6 +72,7 @@ public class MysqlBookDao implements BookDao {
         boolean result = ifEnoughRowsAffectedReturnTrue(rowsAffected);
         return result;
     }
+
 
     private Book ifBookExist(Book resultBook, List<Book> bookList) {
         if (!bookList.isEmpty()&&bookList.get(0) != null) {
