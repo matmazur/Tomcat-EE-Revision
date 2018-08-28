@@ -23,8 +23,7 @@ public class BookServlet extends HttpServlet {
         String title = req.getParameter("title");
         String description = req.getParameter("description");
         String option = req.getParameter("option");
-        DaoFactory factory = DaoFactory.getDaoFactory(DaoFactory.MYSQL_DAO);
-        BookDao dao = factory.getBookDAO();
+        BookDao dao = DaoFactory.getDaoFactory(DaoFactory.MYSQL_DAO).getBookDAO();
         Book book = null;
         String operation = null;
         boolean result = false;
