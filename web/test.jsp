@@ -6,13 +6,13 @@
 
 <body>
 <div id="header">
-    <img id="logo" src="logo.png"/>
+    <img id="logo" src="images/logo.png"/>
     <form id="searchbox"><input type="search" placeholder="Search"></form>
 </div>
 <div id="container">
     <div id="content">
         <div class="featured">
-            <img src="article.png"/>
+            <img src="images/article.png"/>
             <p>Some long or short or other story about stufff and things without additional letter fSome long or short or other story about stufff and things without additional letter f  </p>
             <p>Some long or short or other story about stufff and things without additional letter f</p>
             <a href="#">Article link</a>
