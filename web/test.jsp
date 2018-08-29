@@ -1,44 +1,43 @@
 <html>
 <head>
-    <title>Strona główna</title>
+    <title>Main page</title>
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/styles.css" type="text/css">
 </head>
 
 <body>
-<div>
-    <img src="logo.png" />
-    <form><input type="search" placeholder="Szukaj"></form>
+<div id="header">
+    <img id="logo" src="logo.png"/>
+    <form id="searchbox"><input type="search" placeholder="Search"></form>
 </div>
-<!-- Główny kontener -->
-<div>
-    <!-- Główna kolumna treści -->
-    <div>
-        <!-- Wyróżniony artykuł -->
-        <div>
-            <img src="article.png" />
-            <p>Krótkie streszczenie artykułu Krótkie streszczenie artykułu Krótkie streszczenie artykułu Krótkie streszczenie artykułu </p>
-            <a href="#">Link do artykułu</a>
+<div id="container">
+    <div id="content">
+        <div class="featured">
+            <img src="article.png"/>
+            <p>Some long or short or other story about stufff and things without additional letter fSome long or short or other story about stufff and things without additional letter f  </p>
+            <p>Some long or short or other story about stufff and things without additional letter f</p>
+            <a href="#">Article link</a>
         </div>
-        <!-- Lista pozostałych artykułów -->
-        <div>
-            <h2>Najnowsze artykuły</h2>
+
+        <div class="list">
+            <h2 class="articletitle">Hot stuff</h2>
             <ul>
-                <li><a href="#">Programowanie jest proste!</a></li>
-                <li><a href="#">Rusza Intel Extreme Masters</a></li>
-                <li><a href="#">Premiera GTA V znowu opóźniona</a></li>
-                <li><a href="#">Link do kolejnego artykułu</a></li>
+                <li><a href="#">Something happened!</a></li>
+                <li><a href="#">Something happened yet it was suposed to!</a></li>
+                <li><a href="#">Stuff!!</a></li>
+                <li><a href="#">More of stuff!!</a></li>
             </ul>
         </div>
     </div>
-    <!-- Boczna nawigacja -->
-    <div>
-        <h2>Nawigacja</h2>
+    <div class="sidebar">
+        <h2 class="navbartitle">Navigation</h2>
         <ul>
-            <li><a href="#">Kategoria 1</a></li>
-            <li><a href="#">Kategoria 2</a></li>
-            <li><a href="#">Kategoria 3</a></li>
-            <li><a href="#">Kategoria 4</a></li>
+            <li><a href="#">Category 1</a></li>
+            <li><a href="#">Category 2</a></li>
+            <li><a href="#">Category 3</a></li>
+            <li><a href="#">Category 4</a></li>
         </ul>
     </div>
 </div>
+
 </body>
 </html>

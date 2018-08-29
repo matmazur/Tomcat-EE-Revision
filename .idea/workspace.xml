@@ -7,7 +7,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a2dad716-1116-4494-a2cc-73c10190ada5" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/web/test.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/article.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/bootstrap-3.3.7-dist/css/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/bootstrap-3.3.7-dist/css/bootstrap-theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/bootstrap-3.3.7-dist/css/bootstrap-theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/bootstrap-3.3.7-dist/css/bootstrap-theme.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/web/bootstrap-3.3.7-dist/css/bootstrap-theme.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/web/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/bootstrap-3.3.7-dist/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/bootstrap-3.3.7-dist/css/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/bootstrap-3.3.7-dist/css/bootstrap.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/web/bootstrap-3.3.7-dist/css/bootstrap.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/bootstrap-3.3.7-dist/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/bootstrap-3.3.7-dist/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/bootstrap-3.3.7-dist/css/bootstrap.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/web/bootstrap-3.3.7-dist/css/bootstrap.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.eot" beforeDir="false" afterPath="$PROJECT_DIR$/web/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.svg" beforeDir="false" afterPath="$PROJECT_DIR$/web/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/web/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.woff" beforeDir="false" afterPath="$PROJECT_DIR$/web/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/web/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/bootstrap-3.3.7-dist/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/bootstrap-3.3.7-dist/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/bootstrap-3.3.7-dist/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/bootstrap-3.3.7-dist/js/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/bootstrap-3.3.7-dist/js/npm.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/bootstrap-3.3.7-dist/js/npm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/test.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/test.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -63,15 +83,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="result.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/result.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="31" column="7" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
@@ -107,8 +118,17 @@
       <file leaf-file-name="test.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/test.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="702">
-              <caret line="43" selection-start-line="43" selection-end-line="43" selection-end-column="7" />
+            <state relative-caret-position="243">
+              <caret line="15" column="185" selection-start-line="15" selection-start-column="185" selection-end-line="15" selection-end-column="185" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="styles.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/bootstrap-3.3.7-dist/css/styles.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -131,6 +151,7 @@
         <option value="Class" />
         <option value="FxmlFile" />
         <option value="Jsp File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -158,7 +179,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/beans/City.java" />
         <option value="$PROJECT_DIR$/web/cities-list.jsp" />
         <option value="$PROJECT_DIR$/web/city-names-list.jsp" />
         <option value="$PROJECT_DIR$/src/util/dbUtils.java" />
@@ -208,6 +228,7 @@
         <option value="$PROJECT_DIR$/src/servlets/BookServlet.java" />
         <option value="$PROJECT_DIR$/web/profile.jsp" />
         <option value="$PROJECT_DIR$/web/admin.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/bootstrap-3.3.7-dist/css/styles.css" />
         <option value="$PROJECT_DIR$/web/test.jsp" />
       </list>
     </option>
@@ -243,8 +264,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="513" />
-    <option name="y" value="346" />
+    <option name="x" value="244" />
+    <option name="y" value="156" />
     <option name="width" value="1334" />
     <option name="height" value="841" />
   </component>
@@ -307,74 +328,6 @@
             </path>
             <path>
               <item name="RevisionAndTomcat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RevisionAndTomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RevisionAndTomcat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RevisionAndTomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RevisionAndTomcat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RevisionAndTomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="bootstrap-3.3.7-dist" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RevisionAndTomcat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RevisionAndTomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="bootstrap-3.3.7-dist" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RevisionAndTomcat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RevisionAndTomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="bootstrap-3.3.7-dist" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-              <item name="bootstrap.css" type="620a8d5e:NestingTreeNode" />
-            </path>
-            <path>
-              <item name="RevisionAndTomcat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RevisionAndTomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="bootstrap-3.3.7-dist" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-              <item name="bootstrap-theme.css" type="620a8d5e:NestingTreeNode" />
-            </path>
-            <path>
-              <item name="RevisionAndTomcat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RevisionAndTomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="bootstrap-3.3.7-dist" type="462c0819:PsiDirectoryNode" />
-              <item name="fonts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RevisionAndTomcat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RevisionAndTomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="bootstrap-3.3.7-dist" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RevisionAndTomcat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RevisionAndTomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="fragments" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RevisionAndTomcat" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
             <path>
@@ -409,6 +362,7 @@
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/web/WEB-INF/lib/taglibs-standard-spec-1.2.5.jar!/" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -416,17 +370,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\matma\Desktop\RevisionAndTomcat\web" />
       <recent name="C:\Users\matma\Desktop\RevisionAndTomcat\web\WEB-INF\lib" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="servlets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\matma\Desktop\RevisionAndTomcat\web\WEB-INF" />
       <recent name="C:\Users\matma\Desktop\RevisionAndTomcat\web" />
       <recent name="C:\Users\matma\Desktop\RevisionAndTomcat\web\META-INF" />
+      <recent name="C:\Users\matma\Desktop\RevisionAndTomcat\web\bootstrap-3.3.7-dist\css" />
+      <recent name="C:\Users\matma\Desktop\RevisionAndTomcat\web\WEB-INF" />
       <recent name="C:\Users\matma\Desktop\RevisionAndTomcat" />
-      <recent name="C:\Users\matma\Desktop\RevisionAndTomcat\src\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -706,12 +661,12 @@
       <workItem from="1535277737816" duration="4879000" />
       <workItem from="1535370379791" duration="16432000" />
       <workItem from="1535450986645" duration="3494000" />
-      <workItem from="1535546819780" duration="814000" />
+      <workItem from="1535546819780" duration="2586000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="133879000" />
+    <option name="totallyTimeSpent" value="135651000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -803,13 +758,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/properties.config">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="139" selection-start-column="8" selection-end-column="139" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/mysql-connector-java-8.0.12.jar!/com/mysql/cj/jdbc/ConnectionImpl.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="67">
@@ -1055,7 +1003,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/bootstrap-3.3.7-dist/js/bootstrap.js">
+    <entry file="file://$PROJECT_DIR$/web/bootstrap-3.3.7-dist/js/bootstrap.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
@@ -1067,10 +1015,17 @@
     <entry file="file://$PROJECT_DIR$/web/profile.jsp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/bootstrap-3.3.7-dist/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/test.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="43" selection-start-line="43" selection-end-line="43" selection-end-column="7" />
+        <state relative-caret-position="243">
+          <caret line="15" column="185" selection-start-line="15" selection-start-column="185" selection-end-line="15" selection-end-column="185" />
         </state>
       </provider>
     </entry>
