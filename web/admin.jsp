@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page import="model.Book" %><%--
   Created by IntelliJ IDEA.
   User: matma
@@ -14,6 +15,8 @@
 <h1>OOOO Yu So Sexi So sTroooong Mister ADmiinn</h1>
 <h1>Library viewer</h1>
 <jsp:include page="WEB-INF/fragments/header.jspf"/>
+
+
 <h1><%=response.getStatus()%>
 </h1>
 <form action="/book-servlet" method="post">
