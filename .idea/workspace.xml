@@ -7,12 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a2dad716-1116-4494-a2cc-73c10190ada5" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tomcat.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Tomcat.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/VerySimpleLoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/VerySimpleLoginServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/fragments/header.jspf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/fragments/header.jspf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -66,7 +61,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="admin.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="admin.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/admin.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="663">
@@ -93,7 +88,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.jspf" pinned="false" current-in-tab="false">
+      <file leaf-file-name="header.jspf" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/fragments/header.jspf">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
@@ -243,10 +238,10 @@
         <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/src/main/webapp/login.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/fragments/header.jspf" />
         <option value="$PROJECT_DIR$/src/main/java/servlets/VerySimpleLoginServlet.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/admin.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/fragments/header.jspf" />
       </list>
     </option>
   </component>
@@ -718,7 +713,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="140879000" />
+    <option name="totallyTimeSpent" value="140986000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1152,13 +1147,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/fragments/header.jspf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="394">
@@ -1170,6 +1158,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="663">
           <caret line="39" column="116" selection-start-line="39" selection-start-column="116" selection-end-line="39" selection-end-column="116" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/fragments/header.jspf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
         </state>
       </provider>
     </entry>
