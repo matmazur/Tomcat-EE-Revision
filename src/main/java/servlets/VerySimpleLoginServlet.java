@@ -16,11 +16,11 @@ public class VerySimpleLoginServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         Map <String,String> creds = new HashMap<>();
-        creds.put("admin","password");
+        creds.put("admin","pass");
 
 
-        String username = req.getParameter("j_username");
-        String password = req.getParameter("j_password");
+        String username = req.getParameter("username");
+        String password = req.getParameter("password");
 
        if (creds.containsKey(username) && creds.get(username).equals(password)){
                req.getSession(true).setAttribute("admin",true);
