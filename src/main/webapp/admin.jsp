@@ -37,7 +37,7 @@
     <jsp:include page="WEB-INF/fragments/footer.jspf"/>
     </c:when>
     <c:otherwise>
-        <c:redirect context="/login.jsp"/>
+        <c:redirect url="login.jsp"/>
     </c:otherwise>
 
     </c:choose>
