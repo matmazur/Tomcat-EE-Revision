@@ -1,0 +1,6 @@
+<nav>
+    <br>
+    <a href="admin.jsp">Admin page</a>
+    <a href="user.jsp">User page</a>
+
+</nav>
