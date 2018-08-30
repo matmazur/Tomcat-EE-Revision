@@ -1,0 +1,12 @@
+dao\BookDao.class
+dao\MysqlDAOFactory.class
+dao\MysqlUserDao.class
+servlets\BookServlet.class
+utils\ConnectionProvider.class
+model\Book.class
+dao\DaoFactory.class
+dao\UserDao.class
+dao\MysqlBookDao.class
+model\User.class
+servlets\VerySimpleLoginServlet.class
+utils\ResourceShutter.class
