@@ -37,7 +37,7 @@
     <jsp:include page="WEB-INF/fragments/footer.jspf"/>
     </c:when>
     <c:otherwise>
-        <c:out value="Who are you and what are you doing here?"/> maybe you want to <a href="/login-check">login?</a>
+        <c:out value="Who are you and what are you doing here?"/> maybe you want to <a href="/login.jsp">login?</a>
     </c:otherwise>
 
     </c:choose>
