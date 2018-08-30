@@ -2,7 +2,6 @@ package servlets;
 
 import dao.BookDao;
 import dao.DaoFactory;
-import dao.MysqlBookDao;
 import model.Book;
 
 import javax.servlet.ServletException;
@@ -11,7 +10,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -52,9 +50,7 @@ public class BookServlet extends HttpServlet {
             operation = "delete";
         }
 
-
        ForwardIfBookIsValidAndResultIsTrue(req, resp, book, operation, result);
-
     }
 
     private void ForwardIfBookIsValidAndResultIsTrue(HttpServletRequest req, HttpServletResponse resp, Book book, String operation, boolean result) throws ServletException, IOException {

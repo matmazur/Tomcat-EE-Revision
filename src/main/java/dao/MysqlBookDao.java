@@ -19,7 +19,6 @@ public class MysqlBookDao implements BookDao {
     private final static String SHOW_ALL = "SELECT isbn, title, description FROM book";
 
 
-
     private NamedParameterJdbcTemplate namedTemplate;
 
     public MysqlBookDao() {
@@ -40,7 +39,7 @@ public class MysqlBookDao implements BookDao {
 
         Book resultBook = null;
         SqlParameterSource source = new MapSqlParameterSource("isbn", isbn);
-        List<Book> bookList = namedTemplate.query(READ,source,BeanPropertyRowMapper.newInstance(Book.class));
+        List<Book> bookList = namedTemplate.query(READ, source, BeanPropertyRowMapper.newInstance(Book.class));
         resultBook = ifBookExist(resultBook, bookList);
         return resultBook;
     }
@@ -48,7 +47,7 @@ public class MysqlBookDao implements BookDao {
     public List<Book> showAll() {
 
         Book resultBook = null;
-        List<Book> bookList = namedTemplate.query(SHOW_ALL,BeanPropertyRowMapper.newInstance(Book.class));
+        List<Book> bookList = namedTemplate.query(SHOW_ALL, BeanPropertyRowMapper.newInstance(Book.class));
         resultBook = ifBookExist(resultBook, bookList);
         return bookList;
     }
@@ -70,7 +69,7 @@ public class MysqlBookDao implements BookDao {
 
 
     private Book ifBookExist(Book resultBook, List<Book> bookList) {
-        if (!bookList.isEmpty()&&bookList.get(0) != null) {
+        if (!bookList.isEmpty() && bookList.get(0) != null) {
             resultBook = bookList.get(0);
         }
         return resultBook;
