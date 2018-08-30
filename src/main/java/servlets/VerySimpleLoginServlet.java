@@ -15,6 +15,7 @@ public class VerySimpleLoginServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
+
         Map <String,String> creds = new HashMap<>();
         creds.put("admin","pass");
 

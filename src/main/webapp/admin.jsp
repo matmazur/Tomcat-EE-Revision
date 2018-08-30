@@ -12,6 +12,9 @@
     <title>Secret admin-admin adoration page</title>
 </head>
 <body>
+
+<c:choose>
+<c:when test="${sessionScope.admin}">
 <h1>OOOO Yu So Sexi So sTroooong Mister ADmiinn</h1>
 <h1>Library viewer</h1>
 <jsp:include page="WEB-INF/fragments/header.jspf"/>
@@ -32,7 +35,12 @@
     <br>
     <input type="submit" value="Send"/>
     <jsp:include page="WEB-INF/fragments/footer.jspf"/>
+    </c:when>
+    <c:otherwise>
+        <c:out value="Who are you and what are you doing here?"/> maybe you want to <a href="/login-check">login?</a>
+    </c:otherwise>
 
+    </c:choose>
 </form>
 </body>
 </html>
